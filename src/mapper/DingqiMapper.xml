@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="/">
+<!-- 查询 -->
+	<select id="selectDingqi" parameterType="com.cn.domain.Dingqi" resultType="com.cn.domain.Dingqi">
+		select * from Dingqi
+		<where>
+		<if test="id!='' and id!=null">
+                id=#{id}
+		</if>
+		<if test="xinxi!='' and xinxi!=null">
+            and    xinxi=#{xinxi}
+		</if>
+		<if test="xingming!='' and xingming!=null">
+            and    xingming=#{xingming}
+		</if>
+		<if test="jine!='' and jine!=null">
+            and    jine=#{jine}
+		</if>
+		<if test="shichang!='' and shichang!=null">
+            and    shichang=#{shichang}
+		</if>
+		<if test="daoqi!='' and daoqi!=null">
+            and    daoqi=#{daoqi}
+		</if>
+		<if test="remark!='' and remark!=null">
+            and    remark=#{remark}
+		</if>
+		<if test="recordDate!='' and recordDate!=null">
+            and    recordDate=#{recordDate}
+		</if>
+		<if test="userid!='' and userid!=null">
+            and    userid=#{userid}
+		</if>
+		<if test="status!='' and status!=null">
+            and    status=#{status}
+		</if>
+		</where>
+	</select>
+
+<!-- add new record -->
+ 	<insert id="insertDingqi" parameterType="com.cn.domain.Dingqi">
+  		insert into Dingqi (xinxi,xingming,jine,shichang,daoqi,remark,recordDate,userid,status) values ("${xinxi}","${xingming}","${jine}","${shichang}","${daoqi}","${remark}","${recordDate}","${userid}","${status}")
+ 	</insert>
+
+<!-- update -->
+	<update id="updateDingqi" parameterType="com.cn.domain.Dingqi">
+		update Dingqi
+		<trim prefix="set" suffixOverrides=","> 
+			<if test="id!='' and id!= null">id=#{id},</if>
+			<if test="xinxi!='' and xinxi!= null">xinxi=#{xinxi},</if>
+			<if test="xingming!='' and xingming!= null">xingming=#{xingming},</if>
+			<if test="jine!='' and jine!= null">jine=#{jine},</if>
+			<if test="shichang!='' and shichang!= null">shichang=#{shichang},</if>
+			<if test="daoqi!='' and daoqi!= null">daoqi=#{daoqi},</if>
+			<if test="remark!='' and remark!= null">remark=#{remark},</if>
+			<if test="recordDate!='' and recordDate!= null">recordDate=#{recordDate},</if>
+			<if test="userid!='' and userid!= null">userid=#{userid},</if>
+			<if test="status!='' and status!= null">status=#{status},</if>
+
+		</trim>
+		where id=#{id} 
+	</update>
+
+<!-- delete-->
+	<delete id="deleteDingqi" parameterType="com.cn.domain.Dingqi">
+		delete from Dingqi where id=#{id}
+	</delete>
+</mapper>

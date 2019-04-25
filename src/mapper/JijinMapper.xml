@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="/">
+<!-- 查询 -->
+	<select id="selectJijin" parameterType="com.cn.domain.Jijin" resultType="com.cn.domain.Jijin">
+		select * from Jijin
+		<where>
+		<if test="id!='' and id!=null">
+                id=#{id}
+		</if>
+		<if test="leixing!='' and leixing!=null">
+            and    leixing=#{leixing}
+		</if>
+		<if test="jine!='' and jine!=null">
+            and    jine=#{jine}
+		</if>
+		<if test="shijian!='' and shijian!=null">
+            and    shijian=#{shijian}
+		</if>
+		<if test="shuhui!='' and shuhui!=null">
+            and    shuhui=#{shuhui}
+		</if>
+		<if test="recordDate!='' and recordDate!=null">
+            and    recordDate=#{recordDate}
+		</if>
+		<if test="userid!='' and userid!=null">
+            and    userid=#{userid}
+		</if>
+		<if test="status!='' and status!=null">
+            and    status=#{status}
+		</if>
+		</where>
+	</select>
+
+<!-- add new record -->
+ 	<insert id="insertJijin" parameterType="com.cn.domain.Jijin">
+  		insert into Jijin (leixing,jine,shijian,shuhui,recordDate,userid,status) values ("${leixing}","${jine}","${shijian}","${shuhui}","${recordDate}","${userid}","${status}")
+ 	</insert>
+
+<!-- update -->
+	<update id="updateJijin" parameterType="com.cn.domain.Jijin">
+		update Jijin
+		<trim prefix="set" suffixOverrides=","> 
+			<if test="id!='' and id!= null">id=#{id},</if>
+			<if test="leixing!='' and leixing!= null">leixing=#{leixing},</if>
+			<if test="jine!='' and jine!= null">jine=#{jine},</if>
+			<if test="shijian!='' and shijian!= null">shijian=#{shijian},</if>
+			<if test="shuhui!='' and shuhui!= null">shuhui=#{shuhui},</if>
+			<if test="recordDate!='' and recordDate!= null">recordDate=#{recordDate},</if>
+			<if test="userid!='' and userid!= null">userid=#{userid},</if>
+			<if test="status!='' and status!= null">status=#{status},</if>
+
+		</trim>
+		where id=#{id} 
+	</update>
+
+<!-- delete-->
+	<delete id="deleteJijin" parameterType="com.cn.domain.Jijin">
+		delete from Jijin where id=#{id}
+	</delete>
+</mapper>

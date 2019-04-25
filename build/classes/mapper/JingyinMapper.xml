@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="/">
+<!-- 查询 -->
+	<select id="selectJingyin" parameterType="com.cn.domain.Jingyin" resultType="com.cn.domain.Jingyin">
+		select * from Jingyin
+		<where>
+		<if test="id!='' and id!=null">
+                id=#{id}
+		</if>
+		<if test="leixing!='' and leixing!=null">
+            and    leixing=#{leixing}
+		</if>
+		<if test="jine!='' and jine!=null">
+            and    jine=#{jine}
+		</if>
+		<if test="shijian!='' and shijian!=null">
+            and    shijian=#{shijian}
+		</if>
+		<if test="shichang!='' and shichang!=null">
+            and    shichang=#{shichang}
+		</if>
+		<if test="shuhui!='' and shuhui!=null">
+            and    shuhui=#{shuhui}
+		</if>
+		<if test="recordDate!='' and recordDate!=null">
+            and    recordDate=#{recordDate}
+		</if>
+		<if test="userid!='' and userid!=null">
+            and    userid=#{userid}
+		</if>
+		<if test="status!='' and status!=null">
+            and    status=#{status}
+		</if>
+		</where>
+	</select>
+
+<!-- add new record -->
+ 	<insert id="insertJingyin" parameterType="com.cn.domain.Jingyin">
+  		insert into Jingyin (leixing,jine,shijian,shichang,shuhui,recordDate,userid,status) values ("${leixing}","${jine}","${shijian}","${shichang}","${shuhui}","${recordDate}","${userid}","${status}")
+ 	</insert>
+
+<!-- update -->
+	<update id="updateJingyin" parameterType="com.cn.domain.Jingyin">
+		update Jingyin
+		<trim prefix="set" suffixOverrides=","> 
+			<if test="id!='' and id!= null">id=#{id},</if>
+			<if test="leixing!='' and leixing!= null">leixing=#{leixing},</if>
+			<if test="jine!='' and jine!= null">jine=#{jine},</if>
+			<if test="shijian!='' and shijian!= null">shijian=#{shijian},</if>
+			<if test="shichang!='' and shichang!= null">shichang=#{shichang},</if>
+			<if test="shuhui!='' and shuhui!= null">shuhui=#{shuhui},</if>
+			<if test="recordDate!='' and recordDate!= null">recordDate=#{recordDate},</if>
+			<if test="userid!='' and userid!= null">userid=#{userid},</if>
+			<if test="status!='' and status!= null">status=#{status},</if>
+
+		</trim>
+		where id=#{id} 
+	</update>
+
+<!-- delete-->
+	<delete id="deleteJingyin" parameterType="com.cn.domain.Jingyin">
+		delete from Jingyin where id=#{id}
+	</delete>
+</mapper>

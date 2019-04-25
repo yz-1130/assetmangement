@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="/">
+	<select id="selectuser" parameterType="com.cn.domain.User" resultType="com.cn.domain.User">
+	<!-- select * from user where username=#{username} and password=#{password} and status='A' -->
+	select * from user
+	<where>
+ 
+			<if test="username!='' and username!=null">
+				 username=#{username}
+			</if>
+			<if test="password!=''and password!=null">
+				and password=#{password}
+			</if>
+			
+			and status='A'
+		</where>
+	</select>
+	
+	<select id="selectuserP" parameterType="com.cn.domain.User" resultType="com.cn.domain.User">
+	select * from user where status='P'
+	</select>
+	
+	<!-- 新增管理员信息 -->
+	<insert id="addUser" parameterType="com.cn.domain.User" >
+		insert into user(username,password,role,status,applyDate)values ("${username}","${password}","${role}","${status}","${applyDate}")
+	</insert>
+	
+	<delete id="deleteUserQ" parameterType="com.cn.domain.User" >
+	delete  from user where id=#{id}
+	</delete>
+	
+<update id="approveUserQ" parameterType="com.cn.domain.User">
+ 		update user set status="A" where id=#{id}
+ 	</update>
+ 	
+ 	
+ 	
+ 	<select id="selectuserByID" parameterType="com.cn.domain.User" resultType="com.cn.domain.User">
+	select * from user where id=#{id}
+	</select>
+	
+	
+	<select id="selectuserByName" parameterType="com.cn.domain.User" resultType="com.cn.domain.User">
+	<!-- select * from user where username=#{username} and password=#{password} and status='A' -->
+	select * from user
+	<where>
+ 
+			<if test="username!='' and username!=null">
+				 username=#{username}
+			</if>
+			<if test="password!=''and password!=null">
+				and password=#{password}
+			</if>
+			
+			
+		</where>
+	</select>
+	
+	
+	<update id="chongzhiForUser" parameterType="com.cn.domain.User">
+ 		update user set balance=#{balance} where id=#{id}
+ 	</update>
+	
+	
+</mapper>
