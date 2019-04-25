@@ -1,0 +1,62 @@
+body{
+    background-image: url("../images/login_bg.jpg");
+    background-size: 100% 179%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+}
+div{
+    width: 400px;
+    margin: -20px auto;
+    padding: 30px 0;
+    border-radius: 8px;
+    background-image: url(../images/loginInterface_bg.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+span{
+    font-size: 24px;
+    color: #5ae2d1;
+    height: 30px;
+    line-height: 30px;
+}
+.txt{
+    width: 200px;
+    text-align: center;
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+    stroke-opacity: 0.6;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    margin-top: 25px;
+    padding: 5px;
+    border: solid 1px grey;
+}
+#password{
+	margin-top: 10px;
+	width: 200px;
+    text-align: center;
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+    stroke-opacity: 0.6;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 5px;
+    border: solid 1px grey;
+}
+.button{
+    width: 100px;
+    height: 40px;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: #ffc502;
+}
+p{
+text-align: left;
+margin-left:50px;
+}

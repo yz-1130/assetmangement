@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.Top{
+    font-size: 14px;
+    color: #6a6a6a;
+    font-family: "楷体";
+
+}
+.wangyiyun{
+   left:0px;
+    top:130px;
+    position: relative;
+    float: right;
+
+}
+.loginout{
+    font-size: 25px;
+    float: left;
+    right:14px;
+    top:12px;
+    position: absolute;
+    color:#99BBE8;
+}
+.jiating{
+    font-size: 30px;
+    font-family: 楷体;
+    color:#fb4d00;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    z-index: 1;
+    float:left;
+}
+.rec{
+    width: 100%;
+    height: 120px;
+    background-image:url("/images/login_bg.jpg");
+    font-family: 楷体;
+    color:#fb4d00;
+    position: relative;
+    z-index: 1;
+    float:left;
+}
+
+#middle{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 28px;
+    left: 430px;
+}
+h1{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Verdana, Sans-Serif;
+    position: absolute;
+    top: 15px;
+    left: 520px;
+}
+/*
+.user{
+    height: 50px;
+    line-height:28px;
+    text-align: center;
+    color: white;
+    max-width: 200px;
+    border: solid 1px white;
+    padding: 10px;
+    margin: 35px 50px 0 0;
+    text-shadow: none;
+    float: right;
+}
+
+.operate{
+    width: 100px;
+    height: 92px;
+    border: solid 1px grey;
+    position: absolute;
+    top: 103px;
+    right: 37px;
+    opacity: 0;
+    -moz-opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+}
+.operate ul li{
+    color: black;
+    text-align: center;
+    background-color: white;
+    font-size: 15px;
+    text-shadow: none;
+    height: 30px;
+    line-height: 29px;
+    list-style-type: none;
+    position: relative;
+}
+.operate ul li:hover{
+    background-color: #fffb8f;
+}
+.operate ul li a{
+    text-decoration: none;
+    color: black;
+}
+.operate ul li #tri{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    left: 65px;
+}
+.operate ul li .set{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    left: 21px;
+}
+.operate ul li .perinfo{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+.operate ul li .outpic{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 8px;
+    left: 22px;
+}
+.operate ul #logout{
+    border-top: solid 1px grey;
+}
+
+.show:hover .operate{
+    opacity: 1;
+    -moz-opacity: 1;
+}
+*/

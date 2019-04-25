@@ -1,0 +1,38 @@
+.whole{
+    width: 83%;
+    height: 525px;
+    background-image: url("../images/back.gif");
+    background-size: 104% 104%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    float: left;
+    margin-left: 230px;
+    margin-top: -525px;
+}
+.instroduce{
+    font-family: 楷体;
+    font-size: 30px;
+    color: #6a6a6a;
+}
+.content{
+    line-height: 30px;
+    font-size: 17px;
+    color: black;
+    text-indent: 2em;
+    width: 93%;
+    padding: 15px;
+    margin: 60px 0 0 39px;
+    border: solid 1px #4bd191;
+    box-shadow:0 0 20px #aaffaa inset;
+    -moz-box-shadow: 0 0 20px #aaffaa inset;
+    -o-box-shadow: 0 0 20px #aaffaa inset;
+    -webkit-box-shadow: 0 0 20px #aaffaa inset;
+}
+p{
+    color: #ffca00;
+    font-size: 24px;
+    font-family: 楷体;
+    font-weight: bold;
+    line-height: 40px;
+}
