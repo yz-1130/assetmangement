@@ -38,7 +38,6 @@
 <div class="all">
 <div class="level">
     <img src="${pageContext.request.contextPath}/images/house.png">
-   <!--  <div class="txt">&nbsp;首页&nbsp;&gt;&nbsp;管理&nbsp;&nbsp;</div> -->
 </div>
 
 <div class="content">

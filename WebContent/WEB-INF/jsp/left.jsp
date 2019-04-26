@@ -147,26 +147,8 @@
                 </a>
                 <ul class="treeview-menu">
                    <li><a href="Fangdai-management.do" "><i class="fa fa-circle-o"></i>房.车贷管理</a></li>
-                  <!--   <li><a href="Luntan-management.do" onclick="return qq();"><i class="fa fa-circle-o"></i>论坛管理</a></li> -->
                 </ul>
             </li>
-            
-            
-            <!--  <li class="treeview">
-                <a href="#">
-                    <i class="fa fa-pie-chart"></i>
-                    <span>用户管理</span>
-                    <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                <ul class="treeview-menu">
-                   <li><a href="User-update.do" "><i class="fa fa-circle-o"></i>个人信息管理</a></li>
-                    <li><a href="Luntan-management.do" onclick="return qq();"><i class="fa fa-circle-o"></i>论坛管理</a></li>
-                </ul>
-            </li> -->
-           
-            
-         
-         
         </ul>
     </section>
 </aside>

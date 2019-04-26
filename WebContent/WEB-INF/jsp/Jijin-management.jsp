@@ -15,7 +15,6 @@
 <div class="all">
 <div class="level">
     <img src="${pageContext.request.contextPath}/images/house.png">
-    <!--   <div class="txt">&nbsp;首页&nbsp;&gt;&nbsp;车辆管理&nbsp;&gt;&nbsp;车辆管理</div> --></div>
 <form action="selectJijin.do" method="post">
 <div class="whole">
     <div class="littletitle">搜索查询</div>
