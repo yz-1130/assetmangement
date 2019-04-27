@@ -1,0 +1,817 @@
+
+<STYLE type=text/css>BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: url(/img/bj.gif) #fffff8 repeat-x 0px 0px; COLOR: #6d6d6a; FONT-SIZE: 12px; PADDING-TOP: 0px
+}
+A {
+	COLOR: #6d6d6a; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #f06a22
+}
+.left_wz {
+	PADDING-LEFT: 20px; FONT-WEIGHT: bold
+}
+.mid_wz {
+	PADDING-LEFT: 20px; FONT-WEIGHT: bold
+}
+.left_wz {
+	COLOR: #d7342f
+}
+.mid_wz {
+	COLOR: #000
+}
+.left_gryh {
+	COLOR: #f36f21; FONT-WEIGHT: bold
+}
+.left_qyyh {
+	COLOR: #57a677; FONT-WEIGHT: bold
+}
+.left_ul {
+	PADDING-BOTTOM: 0px; MARGIN: 4px auto 0px; PADDING-LEFT: 0px; WIDTH: 179px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.left_ul LI {
+	LIST-STYLE-TYPE: none
+}
+.left_ul LI A {
+	LINE-HEIGHT: 34px; LIST-STYLE-TYPE: none; PADDING-LEFT: 25px; WIDTH: 154px; DISPLAY: block; BACKGROUND: url(/img/left_navbj.gif) no-repeat 0px 0px; COLOR: #6d6d6a; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.left_ul LI A:hover {
+	BACKGROUND: url(/img/left_navbj_hover.gif) no-repeat 0px 0px
+}
+.min_qhhover {
+	COLOR: #fff; FONT-WEIGHT: bold
+}
+.min_qhnone {
+	COLOR: #000; FONT-WEIGHT: bold
+}
+.time {
+	COLOR: #b0b0b0
+}
+.left_wz1 {
+	PADDING-LEFT: 20px; FONT-WEIGHT: bold
+}
+</STYLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<LINK rel=stylesheet type=text/css href="basic.css"><LINK 
+rel=stylesheet type=text/css href="index.css">
+<SCRIPT type=text/javascript src="jquery-1.3.2.min.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js.js"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+$(function() { getMyMenu("lcjsq"); });
+</SCRIPT>
+
+
+
+
+
+<title>在线理财计算器</title>
+
+<DIV id=main_tab>
+                  <DIV class=blank_block>
+                  <DIV class=main_tab_title>
+                  <UL>
+                    <LI id=a class=tab_on>个人储蓄计算 </LI>
+                    <LI id=b class=tab>个人贷款计算 </LI>
+                    <LI id=c class=tab>外币兑换计算 </LI>
+                    <LI id=d class=tab>国债收益计算 </LI></UL></DIV>
+                  <DIV class=main_tab_item>
+                  <UL id=tab_a class=show_tab>
+                    <SCRIPT language=javascript type=text/javascript>
+
+  var frateArray=new Array();
+  //人民币
+  var frateArray0=new Array();
+  frateArray0[0] = "0.4000";	//活期
+  frateArray0[1] = "2.6000";	//三个
+  frateArray0[2] = "2.8000";	//半年
+  frateArray0[3] = "3.0000";	//一年
+  frateArray0[4] = "3.9000";	//二年
+  frateArray0[5] = "4.5000";	//三年
+  frateArray0[6] = "5.0000";	//五年
+
+  frateArray[0]=frateArray0;
+  
+  //美元
+  var frateArray1=new Array();
+  frateArray1[0] = "0.1000";	//活期
+  frateArray1[1] = "0.2500";	//一个月
+  frateArray1[2] = "0.5000";	//三个月
+  frateArray1[3] = "0.7500";	//半年
+  frateArray1[4] = "1.2500";	//一年
+  frateArray1[5] = "1.2500";	//二年
+  frateArray[1]=frateArray1;
+  
+  //英镑
+  var frateArray2=new Array();
+  frateArray2[0] = "0.1250";	//活期
+  frateArray2[1] = "0.2180";	//一个月
+  frateArray2[2] = "0.8050";	//三个月
+  frateArray2[3] = "0.9760";	//半年
+  frateArray2[4] = "1.0760";	//一年
+  frateArray2[5] = "1.0760";	//二年
+  frateArray[2]=frateArray2;
+  
+  //欧元
+  var frateArray3=new Array();
+  frateArray3[0] = "0.1000";	//活期
+  frateArray3[1] = "0.7500";	//一个月
+  frateArray3[2] = "1.0000";	//三个月
+  frateArray3[3] = "1.1250";	//半年
+  frateArray3[4] = "1.2500";	//一年
+  frateArray3[5] = "1.3125";	//二年
+  frateArray[3]=frateArray3;
+  
+  //日元
+  var frateArray4=new Array();
+  frateArray4[0] = "0.0001";	//活期
+  frateArray4[1] = "0.0100";	//一个月
+  frateArray4[2] = "0.0100";	//三个月
+  frateArray4[3] = "0.0100";	//半年
+  frateArray4[4] = "0.0100";	//一年
+  frateArray4[5] = "0.0100";	//二年
+  frateArray[4]=frateArray4;
+  
+  //港币
+  var frateArray5=new Array();
+  frateArray5[0] = "0.0200";	//活期
+  frateArray5[1] = "0.1500";	//一个月
+  frateArray5[2] = "0.4000";	//三个月
+  frateArray5[3] = "0.5000";	//半年
+  frateArray5[4] = "0.8000";	//一年
+  frateArray5[5] = "1.1000";	//二年
+  frateArray[5]=frateArray5;
+  
+  //加拿大元
+  var frateArray6=new Array();
+  frateArray6[0] = "0.0400";	//活期
+  frateArray6[1] = "0.2165";	//一个月
+  frateArray6[2] = "0.3915";	//三个月
+  frateArray6[3] = "0.5100";	//半年
+  frateArray6[4] = "0.7315";	//一年
+  frateArray6[5] = "0.7315";	//二年
+  frateArray[6]=frateArray6;
+  
+  //瑞士法郎
+  var frateArray7=new Array();
+  frateArray7[0] = "0.0001";	//活期
+  frateArray7[1] = "0.0100";	//一个月
+  frateArray7[2] = "0.0100";	//三个月
+  frateArray7[3] = "0.0100";	//半年
+  frateArray7[4] = "0.0100";	//一年
+  frateArray7[5] = "0.0100";	//二年
+  frateArray[7]=frateArray7;
+  
+  //澳大利亚元
+  var frateArray8=new Array();
+  frateArray8[0] = "0.2375";	//活期
+  frateArray8[1] = "1.2400";	//一个月
+  frateArray8[2] = "1.3875";	//三个月
+  frateArray8[3] = "1.5075";	//半年
+  frateArray8[4] = "1.5750";	//一年
+  frateArray8[5] = "1.5750";	//二年
+  frateArray[8]=frateArray8;
+  
+  //新加坡元
+  var frateArray9=new Array();
+  frateArray9[0] = "0.0001";	//活期
+  frateArray9[1] = "0.0100";	//一个月
+  frateArray9[2] = "0.0100";	//三个月
+  frateArray9[3] = "0.0100";	//半年
+  frateArray9[4] = "0.0100";	//一年
+  frateArray9[5] = "0.0100";	//二年
+  frateArray[9]=frateArray9;
+  
+  var first = 0;
+  var cnyArray=new Array();
+  
+  cnyArray[first] = new Array('活期','0');	//活期
+  first++;
+  cnyArray[first] = new Array('整存整取 三个月','1');	//三个月
+  first++;
+  cnyArray[first] = new Array('整存整取 半年','2');	//半年
+  first++;
+  cnyArray[first] = new Array('整存整取 一年','3');	//一年
+  first++;
+  cnyArray[first] = new Array('整存整取 二年','4');	//二年
+  first++;
+  cnyArray[first] = new Array('整存整取 三年','5');	//三年
+  first++;
+  cnyArray[first] = new Array('整存整取 五年','6');	//五年
+  first++;
+  
+  var second = 0;
+  var forArray=new Array();
+  
+  forArray[second] = new Array('活期','0');	//活期
+  second++;
+  forArray[second] = new Array('整存整取 一个月','1');	//一个月
+  second++;
+  forArray[second] = new Array('整存整取 三个月','2');	//三个月
+  second++;
+  forArray[second] = new Array('整存整取 半年','3');	//半年
+  second++;
+  forArray[second] = new Array('整存整取 一年','4');	//一年
+  second++;
+  forArray[second] = new Array('整存整取 二年','5');	//二年
+  second++;
+  
+  var limitArray1=new Array();
+  limitArray1[0] = '';
+  limitArray1[1] = 3;
+  limitArray1[2] = 6;
+  limitArray1[3] = 12;
+  limitArray1[4] = 24;
+  limitArray1[5] = 36;
+  limitArray1[6] = 60;
+  
+  var limitArray2=new Array();
+  limitArray2[0] = '';
+  limitArray2[1] = 1;
+  limitArray2[2] = 3;
+  limitArray2[3] = 6;
+  limitArray2[4] = 12;
+  limitArray2[5] = 24;
+	
+</SCRIPT>
+
+                    <SCRIPT language=javascript>
+	// 输入内容为空提示
+function perSaving(){ 
+        var amount=document.per_form.amountTextBox.value 
+        var yrate=document.per_form.yRateTextBox.value 
+        var term=document.per_form.termTextBox.value 
+       
+      if (amount==""){ 
+         alert("请输入存款金额!") 
+         document.per_form.amountTextBox.focus() 
+         window.event.returnValue = false; 
+         return
+      } 
+	  if(isNaN(amount)){ 
+         alert("存款金额为数字!") 
+         document.per_form.amountTextBox.focus()
+         window.event.returnValue = false;
+          return
+         } 
+       if (yrate==""){ 
+         alert("请输入年利率或选择期限种类!") 
+         document.per_form.yRateTextBox.focus() 
+         window.event.returnValue = false;
+          return
+      } 
+	  if(isNaN(yrate)){ 
+         alert("年利率为数字!") 
+         document.per_form.yRateTextBox.focus() 
+         window.event.returnValue = false;
+          return
+         }
+       if (term==""){ 
+         alert("请输入存期!") 
+         document.per_form.termTextBox.focus() 
+         window.event.returnValue = false;
+         return
+      } 
+      if(isNaN(term)){ 
+         alert("存期为数字!") 
+          document.per_form.termTextBox.focus()
+         window.event.returnValue = false;
+          return
+         } 
+    var taxrate=0.05;//Saving Tax Rate,20070816
+    var interest=amount*yrate*term*0.01/12
+    var tax=taxrate*amount*yrate*term*0.01/12
+    var result=amount*(1+(1-taxrate)*yrate*term*0.01/12) 
+    interest=Math.round(interest*100) 
+	interest=interest/100 
+	interest=interest+""	 
+    document.per_form.interestTextBox.value=interest
+    
+    tax=Math.round(tax*100) 
+	tax=tax/100 
+	tax=tax+""	 
+    document.per_form.taxTextBox.value=tax          
+	
+	result=Math.round(result*100) 
+	result=result/100 
+	result=result+""	 
+    document.per_form.resultTextBox.value=result    
+    window.event.returnValue = false;     
+	} 
+</SCRIPT>
+
+                    <SCRIPT language=javascript type=text/javascript>
+<!--
+	function __doPostBack(eventTarget, eventArgument) {
+		var theform;
+		if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+			theform = document.per_form;
+		}
+		else {
+			theform = document.forms["per_form"];
+		}
+		theform.__EVENTTARGET.value = eventTarget.split("$").join(":");
+		theform.__EVENTARGUMENT.value = eventArgument;
+		theform.submit();
+	}
+	function initForm(value){
+		var limit = document.per_form.duringDropDownlist;
+		for (var i=limit.length-1; i>=0; i--){
+			limit.options[i] = null;
+		}
+		if(value == 0){
+			for(var i=0; i<first; i++){
+				limit.options[i] = new Option(cnyArray[i][0],cnyArray[i][1]);
+			}
+		}else{
+			for(var i=0; i<second; i++){
+				limit.options[i] = new Option(forArray[i][0],forArray[i][1]);
+			}
+		}
+		showDate();
+	}
+	function showDate(){
+		var curr = document.getElementById("currencyDropDownList").value;
+		var num = document.getElementById("duringDropDownlist").value;
+		var rate = frateArray[curr][num];
+		var date;
+		if(curr == 0){
+			date = limitArray1[num];
+		}else{
+			date = limitArray2[num];
+		}
+		document.per_form.yRateTextBox.value = rate;
+		document.per_form.termTextBox.value = date;
+		
+		document.per_form.interestTextBox.value = "";
+		document.per_form.taxTextBox.value = "";
+		document.per_form.resultTextBox.value = "";
+	}
+// -->
+</SCRIPT>
+
+                    <FORM id=per_form method=post name=per_form><LI><SPAN>币种:</SPAN> <SELECT style="WIDTH: 134px" 
+                    onchange=initForm(this.value) name=currencyDropDownList> 
+                      <OPTION selected value=0>人民币</OPTION> <OPTION 
+                      value=1>美元</OPTION> <OPTION value=2>英镑</OPTION> <OPTION 
+                      value=3>欧元</OPTION> <OPTION value=4>日元</OPTION> <OPTION 
+                      value=5>港币</OPTION> <OPTION value=6>加拿大元</OPTION> <OPTION 
+                      value=7>瑞士法郎</OPTION> <OPTION value=8>澳大利亚元</OPTION> 
+                      <OPTION value=9>新加坡元</OPTION></SELECT> 
+                    <LI><SPAN>期限种类:</SPAN> <SELECT style="WIDTH: 134px" 
+                    onchange=showDate(); name=duringDropDownlist> <OPTION 
+                      selected value=0>活期</OPTION> <OPTION value=1>整存整取 
+                      三个月</OPTION> <OPTION value=2>整存整取 半年</OPTION> <OPTION 
+                      value=3>整存整取 一年</OPTION> <OPTION value=4>整存整取 二年</OPTION> 
+                      <OPTION value=5>整存整取 三年</OPTION> <OPTION value=6>整存整取 
+                      五年</OPTION></SELECT> 
+                    <LI><SPAN>存款金额:</SPAN> <INPUT style="WIDTH: 130px" 
+                    id=amountTextBox name=amountTextBox> 元 
+                    <LI><SPAN>年利率:</SPAN> <INPUT 
+                    style="WIDTH: 130px; COLOR: #404040" id=yRateTextBox 
+                    value=0.4000 name=yRateTextBox> (%) 
+                    <LI><SPAN>存期:</SPAN> <INPUT style="WIDTH: 130px" 
+                    id=termTextBox name=termTextBox> 月 
+                    <LI style="MARGIN: 12px 8px"><SPAN>&nbsp;</SPAN> <A 
+                    onclick=javascript:perSaving() 
+                    href="#"><IMG 
+                    style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+                    border=0 src="form_submit.jpg" width=52 
+                    height=19></A> <A 
+                    onclick=javascript:document.per_form.reset() 
+                    href="#"><IMG 
+                    style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+                    border=0 src="form_reset.jpg" width=52 
+                    height=19></A> 
+                    <LI><SPAN>利息:</SPAN> <INPUT style="WIDTH: 130px" 
+                    id=interestTextBox readOnly name=interestTextBox> 元 
+                    </FORM></LI></UL>
+                  <UL id=tab_b class=hide_tab>
+                    <SCRIPT language=Javascript>
+function doSubmit(){
+	var type = document.getElementById("backType").value;
+	var amount = document.getElementById("amount").value;
+	var year = document.getElementById("year").value;
+	var rate = document.getElementById("rate").value;
+	if (amount==""){ 
+         alert("请输入贷款金额!") 
+         document.getElementById("amount").focus() 
+         window.event.returnValue = false; 
+         return
+      } 
+	  if(isNaN(amount)){ 
+         alert("贷款金额为数字!") 
+         document.getElementById("amount").focus()
+         window.event.returnValue = false;
+          return
+         } 
+       if (year==""){ 
+         alert("请输入贷款期限!") 
+         document.getElementById("year").focus() 
+         window.event.returnValue = false;
+          return
+      } 
+	  if(isNaN(year)){ 
+         alert("贷款期限为数字!") 
+         document.getElementById("year").focus() 
+         window.event.returnValue = false;
+          return
+         }
+       if (rate==""){ 
+         alert("请输入贷款年利率!") 
+         document.getElementById("rate").focus() 
+         window.event.returnValue = false;
+         return
+      } 
+      if(isNaN(rate)){ 
+         alert("贷款年利率为数字!") 
+          document.getElementById("rate").focus()
+         window.event.returnValue = false;
+          return
+         } 
+	if(type == 0){
+		runjs(msgbrd);
+	}else if(type == 1){
+		runjs1(msgbrd);
+	}
+}
+function addRow(tbodyName,td1,td2,td3,td4,td5)
+{	
+	//alert(td1+"|"+td2+"|"+td3+"|"+td4+"|"+td5);
+	var tbody  = document.getElementById(tbodyName);
+	var row = document.createElement("TR");
+	row.align = "center";
+	row.height = "20";
+	
+	cell = document.createElement("TD");
+	cell.innerHTML = td1;
+	row.appendChild(cell);
+	
+	cell = document.createElement("TD");
+	cell.innerHTML = td2;
+	row.appendChild(cell);
+	
+	cell = document.createElement("TD");
+	cell.innerHTML = td3;
+	row.appendChild(cell);
+	
+	cell = document.createElement("TD");
+	cell.innerHTML = td4;
+	row.appendChild(cell);
+	
+	cell = document.createElement("TD");
+	cell.innerHTML = td5;
+	row.appendChild(cell);
+	
+	tbody.appendChild(row);
+}
+</SCRIPT>
+
+                    <SCRIPT language=Javascript>
+function runjs(obj)
+{
+document.getElementById("showResult").style.display = "";
+amount=parseFloat(obj.amount.value)//贷款本金	
+year=parseInt(obj.year.value)//按揭年数
+nlx=parseFloat(obj.rate.value)/100//按揭年利率
+qsh=12*year//按揭总月数
+ylx=nlx/12//按揭月利率
+yj=Math.round((ylx/(1-(1/(Math.pow(1+ylx,qsh)))))*amount*100,5)/100//月均还款
+hkzy=yj*qsh//还款总额
+document.getElementById("td0").innerHTML = "<b>按月等额还款汇总</b>";
+document.getElementById("td1").innerHTML = year+"年";
+document.getElementById("td2").innerHTML = qsh+"期";
+document.getElementById("td3").innerHTML = Math.round(nlx*10000,5)/100+"%";
+document.getElementById("td4").innerHTML = Math.round(ylx*1000000,5)/1000+"‰";
+document.getElementById("td5").innerHTML = amount+"元";
+document.getElementById("td6").innerHTML = yj+"元";
+document.getElementById("td7").innerHTML = "<b>按月等额还款详细计算结果</b>"; 
+cleanTableBody("resultTab");
+sybj=amount
+yhbj=0
+yhlx=0
+for (i = 1; i <= qsh; i++)
+{
+bjlx=Math.round(sybj*ylx*100,5)/100
+bjbj=Math.round((yj-bjlx)*100,5)/100
+yhlx=Math.round((yhlx+bjlx)*100,5)/100
+yhbj=Math.round((yhbj+bjbj)*100,5)/100
+sybj=Math.round((amount-yhbj)*100,5)/100
+addRow("resultTab",i,yj,bjbj,bjlx,sybj);
+}
+document.getElementById("tf1").innerHTML = "合计";
+document.getElementById("tf2").innerHTML = yhbj+yhlx;
+document.getElementById("tf3").innerHTML = yhbj;
+document.getElementById("tf4").innerHTML = yhlx;
+document.getElementById("tf5").innerHTML = "/";
+document.getElementById("td8").innerHTML = "本计算结果仅供参考，请以当地银行结算为准！<a href='#' onclick='doReset();'>返回</a>";
+}</SCRIPT>
+
+                    <SCRIPT language=Javascript>
+
+function runjs1(obj)
+{
+document.getElementById("showResult").style.display = "";
+amount=parseFloat(obj.amount.value)//贷款本金	
+year=parseInt(obj.year.value)//按揭年数
+nlx=parseFloat(obj.rate.value)/100//按揭年利率
+qsh=12*year//按揭总月数
+ylx=nlx/12//按揭月利率
+yj=Math.round((amount/qsh)*100,5)/100//月还本金
+document.getElementById("td0").innerHTML = "<b>按月递减还款汇总</b>";
+document.getElementById("td1").innerHTML = year+"年";
+document.getElementById("td2").innerHTML = qsh+"期";
+document.getElementById("td3").innerHTML = Math.round(nlx*10000,5)/100+"%";
+document.getElementById("td4").innerHTML = Math.round(ylx*1000000,5)/1000+"‰";
+document.getElementById("td5").innerHTML = amount+"元";
+document.getElementById("td6").innerHTML = yj+"元";
+document.getElementById("td7").innerHTML = "<b>按月递减还款详细计算结果</b>"; 
+sybj=amount
+yhbj=0
+yhlx=0
+cleanTableBody("resultTab");
+for (i = 1; i <= qsh; i++)
+{
+bjlx=Math.round(sybj*ylx*100,5)/100
+yhlx=Math.round((yhlx+bjlx)*100,5)/100
+yhbj=Math.round((yhbj+yj)*100,5)/100
+sybj=Math.round((amount-yhbj)*100,5)/100
+var temp = Math.round((yj+bjlx)*100,5)/100
+addRow("resultTab",i,temp,yj,bjlx,sybj);
+}
+document.getElementById("tf1").innerHTML = "合计";
+document.getElementById("tf2").innerHTML = yhbj+yhlx;
+document.getElementById("tf3").innerHTML = yhbj;
+document.getElementById("tf4").innerHTML = yhlx;
+document.getElementById("tf5").innerHTML = "/";
+document.getElementById("td8").innerHTML = "本计算结果仅供参考，请以当地银行结算为准！<a href='#' onclick='doReset();'>返回</a>";
+}
+function doReset(){
+	document.getElementById("showResult").style.display = "none";
+}
+
+function cleanTableBody(tbodyName)
+{
+	var tbody  = document.getElementById(tbodyName);
+	var rows=tbody.getElementsByTagName("TR");
+	var size = rows.length;
+	for(var i=0;i<size;i++)
+	{
+		tbody.deleteRow(0);
+	}
+}
+</SCRIPT>
+
+                    <FORM name=msgbrd>
+                    <LI><SPAN>贷款种类:</SPAN><SELECT style="WIDTH: 133px" 
+                    name=borrowtype> <OPTION selected 
+                      value=房产按揭贷款>房产按揭贷款</OPTION> <OPTION 
+                      value=抵押贷款>抵押贷款</OPTION> <OPTION 
+                      value=个人质押贷款>个人质押贷款</OPTION> <OPTION 
+                      value=个人信用贷款>个人信用贷款</OPTION></SELECT> 
+                    <LI><SPAN>贷款额度:</SPAN><INPUT name=amount> 元 
+                    <LI><SPAN>贷款期限:</SPAN><INPUT name=year> 年 
+                    <LI><SPAN>贷款年利率:</SPAN><INPUT name=rate> (%) 
+                    <LI><SPAN>还款方式:</SPAN><SELECT style="WIDTH: 133px" 
+                    id=backType name=backType> <OPTION selected 
+                      value=0>按月等额还款计算</OPTION> <OPTION 
+                    value=1>按月递减还款计算</OPTION></SELECT> 
+                    <LI style="MARGIN: 12px 8px"><SPAN>&nbsp;</SPAN> <A 
+                    onclick=doSubmit(); 
+                    href="#"><IMG 
+                    style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+                    border=0 src="form_submit.jpg" width=52 
+                    height=19></A> <A onclick=javascript:document.msgbrd.reset() 
+                    href="#"><IMG 
+                    style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+                    border=0 src="form_reset.jpg" width=52 
+                    height=19></A> </FORM>
+                    <DIV style="DISPLAY: none" id=showResult>
+                    <DIV id=td0 align=center></DIV>
+                    <TABLE border=0 cellSpacing=0 borderColor=#cccccc 
+                    borderColorLight=#cccccc borderColorDark=#ffffff 
+                    cellPadding=0 width=650 align=center>
+                      <TBODY>
+                      <TR height=25 align=middle bgColor=#efefef>
+                        <TD>年限</TD>
+                        <TD>期数</TD>
+                        <TD>年利率</TD>
+                        <TD>月利率</TD>
+                        <TD>贷款额</TD>
+                        <TD>月还本金</TD></TR>
+                      <TR height=20 align=middle>
+
+                        <TD id=td1></TD>
+                        <TD id=td2></TD>
+                        <TD id=td3></TD>
+                        <TD id=td4></TD>
+                        <TD id=td5></TD>
+                        <TD id=td6></TD></TR></TBODY></TABLE>
+                    <DIV id=td7 align=center></DIV>
+                    <TABLE border=0 cellSpacing=0 borderColorLight=#cccccc 
+                    borderColorDark=#ffffff cellPadding=0 width=650 
+align=center>
+                      <THEAD>
+                      <TR height=25 align=middle bgColor=#efefef>
+                        <TD>还款期数</TD>
+                        <TD>每期还款额</TD>
+                        <TD>本期应还本金</TD>
+                        <TD>本期应还利息</TD>
+                        <TD>剩余本金</TD></TR></THEAD>
+                      <TBODY id=resultTab></TBODY>
+                      <TFOOT>
+                      <TR height=25 align=middle>
+                        <TD id=tf1></TD>
+                        <TD id=tf2></TD>
+                        <TD id=tf3></TD>
+                        <TD id=tf4></TD>
+                        <TD id=tf5></TD></TR></TFOOT></TABLE>
+                    <DIV id=td8 align=center></DIV></DIV></LI></UL>
+                  <UL id=tab_c class=hide_tab>
+                    <SCRIPT language=JavaScript type=text/javascript>
+function doforeignexchange(){
+        var amount=document.lcjsq_wbdhjsq.wbbj.value
+        var exrate=document.lcjsq_wbdhjsq.hl.value
+
+      if (amount==""){
+         alert("请输入外币本金!")
+         document.lcjsq_wbdhjsq.wbbj.focus()
+         return false;
+      }
+       if (exrate==""){
+         alert("请输入汇率或选择币种!")
+         document.lcjsq_wbdhjsq.hl.focus()
+         return false;
+      }
+      if(isNaN(amount)){
+         alert("请输入数字!")
+         document.lcjsq_wbdhjsq.wbbj.focus()
+          return false;
+         }
+      if(isNaN(exrate)){
+         alert("请输入数字!")
+         document.lcjsq_wbdhjsq.hl.focus()
+          return false;
+         }
+
+	var result=amount*exrate/100;
+	result=Math.round(result*100)
+	result=result/100
+	result=result+""	
+    document.lcjsq_wbdhjsq.bbdhz.value = result
+	return false;
+}
+function docurrencyselect(){
+	var thisSelect=document.getElementById("ybz");
+	var currencyType=(thisSelect.options[thisSelect.selectedIndex].value);
+	var huilv = document.getElementById("hl")
+		if(currencyType=='20'){
+			huilv.value="682.7";
+		}
+	
+		if(currencyType=='30'){
+			huilv.value="88.08";
+		}
+	
+		if(currencyType=='40'){
+			huilv.value="6.9844";
+		}
+	
+		if(currencyType=='50'){
+			huilv.value="876.92";
+		}
+	
+		if(currencyType=='60'){
+			huilv.value="1080.99";
+		}
+	
+		if(currencyType=='70'){
+			huilv.value="585.91";
+		}
+	
+		if(currencyType=='80'){
+			huilv.value="580.24";
+		}
+	
+		if(currencyType=='90'){
+			huilv.value="460.09";
+		}
+	
+		if(currencyType=='91'){
+			huilv.value="459.79";
+		}
+	
+}
+</SCRIPT>
+
+                    <FORM name=lcjsq_wbdhjsq>
+                    <LI><SPAN>原币种:</SPAN><SELECT id=ybz 
+                    onchange=docurrencyselect(); name=ybz> <OPTION selected 
+                      value=20>美元</OPTION> <OPTION value=30>港币</OPTION> <OPTION 
+                      value=40>日元</OPTION> <OPTION value=50>欧元</OPTION> <OPTION 
+                      value=60>英镑</OPTION> <OPTION value=70>瑞士法郎</OPTION> 
+                      <OPTION value=80>加拿大元</OPTION> <OPTION 
+                      value=90>澳大利亚元</OPTION> <OPTION 
+                    value=91>新加坡元</OPTION></SELECT> 
+                    <LI><SPAN>兑换币种:</SPAN><SELECT name=dhbz> <OPTION selected 
+                      value=1>人民币</OPTION></SELECT> 
+                    <LI><SPAN>外币本金:</SPAN><INPUT name=wbbj> 元 
+                    <LI><SPAN>汇&nbsp;&nbsp;&nbsp;&nbsp;率:</SPAN><INPUT id=hl 
+                    name=hl> 
+                    <LI><SPAN>本币兑换值:</SPAN><INPUT readOnly name=bbdhz> 
+                    <LI>（汇率请以银行公布当期汇率为准。如页面显示汇率有误，可手工调整以便计算。） 
+                    <LI><SPAN></SPAN><INPUT class=job_search_but onclick=doforeignexchange(); value=计算 type=button name=Submit2> 
+                    </FORM></LI></UL>
+                  <UL id=tab_d class=hide_tab>
+                    <SCRIPT language=javascript>
+	function nationalDebt(){
+        
+        var term=document.per_form2.termDropDownList.value;
+        var amount=document.per_form2.gzAmountTextBox.value
+        var rate=document.per_form2.gzRateTextBox.value
+
+      if (term==0){
+         alert("请选择存期!")
+         window.event.returnValue = false;
+         return
+      }
+      if (amount==""){
+         alert("请输入国债金额!")
+         document.per_form2.gzAmountTextBox.focus()
+         window.event.returnValue = false;
+         return
+      }
+	  if(isNaN(amount)){
+         alert("请输入数字!")
+         document.per_form2.gzAmountTextBox.focus()
+         window.event.returnValue = false;
+          return
+         }
+	if(amount<=0){
+         alert("请正确输入!")
+         document.per_form2.gzAmountTextBox.focus()
+         window.event.returnValue = false;
+          return
+         }
+       if (rate==""){
+         alert("请输入国债利率!")
+         document.per_form2.gzRateTextBox.focus()
+         window.event.returnValue = false;
+         return
+      }
+      
+      if(isNaN(rate)){
+         alert("请输入数字!")
+         document.per_form2.gzRateTextBox.focus()
+         window.event.returnValue = false;
+          return
+         }
+      
+      if(rate<=0){
+         alert("请正确输入!")
+         document.per_form2.gzRateTextBox.focus()
+         window.event.returnValue = false;
+          return
+         }
+    var interest=term*amount*rate/100
+	var result=amount*1+interest;
+	interest=Math.round(interest*100)
+	interest=interest/100
+	interest=interest+""	
+    document.per_form2.interestTextBox.value=interest
+	result=Math.round(result*100)
+	result=result/100
+	result=result+""	
+    document.per_form2.resultTextBox.value=result
+    window.event.returnValue = false;
+	}
+		</SCRIPT>
+
+                    <FORM id=per_form2 name=per_form2>
+                    <LI><SPAN>规定存期:</SPAN><SELECT style="WIDTH: 134px" 
+                    name=termDropDownList> <OPTION value="">请选择存期</OPTION> 
+                      <OPTION selected value=2>2年期</OPTION> <OPTION 
+                      value=3>3年期</OPTION> <OPTION value=5>5年期</OPTION> <OPTION 
+                      value=10>10年期</OPTION></SELECT> 
+                    <LI><SPAN>国债金额:</SPAN><INPUT id=gzAmountTextBox 
+                    name=gzAmountTextBox> 元 
+                    <LI><SPAN>国债利率（年利率）:</SPAN><INPUT id=gzRateTextBox 
+                    name=gzRateTextBox> % 
+                    <LI><SPAN></SPAN><A onclick=javascript:nationalDebt() 
+                    href="#"><IMG 
+                    style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+                    border=0 src="form_submit.jpg" width=52 
+                    height=19></A> <A 
+                    onclick=javascript:document.per_form2.reset() 
+                    href="#"><IMG 
+                    style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+                    border=0 src="form_reset.jpg" width=52 
+                    height=19></A> 
+                    <LI><SPAN>国债利息:</SPAN><INPUT id=interestTextBox readOnly 
+                    name=interestTextBox> 
+                    <LI><SPAN>本息合计:</SPAN><INPUT id=resultTextBox readOnly 
+                    name=resultTextBox> 元 
+                    <LI><INPUT id=selectedTerm value=2 type=hidden> 
+                  </FORM></LI></UL>
+                  <DIV class=clear></DIV></DIV></DIV></DIV>
+

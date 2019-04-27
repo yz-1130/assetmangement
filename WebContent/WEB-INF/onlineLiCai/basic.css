@@ -1,0 +1,33 @@
+#submenu {
+	WIDTH: 98%; BACKGROUND: white; FLOAT: left; HEIGHT: auto; OVERFLOW: hidden
+}
+#submenu UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+#submenu UL LI IMG {
+	MARGIN-LEFT: 5px
+}
+#submenu UL LI {
+	_padding-top: 10px
+}
+#submenu UL LI A:link {
+	COLOR: #6d6d6a
+}
+#submenu UL LI A:hover {
+	COLOR: #f06a22
+}
+#submenu UL LI.last {
+	BORDER-BOTTOM-WIDTH: 0px
+}
+#submenu UL LI.last DIV {
+	BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 5px
+}
+#submenu UL LI {
+	BORDER-BOTTOM: #dddddd 1px solid; LINE-HEIGHT: 200%; LIST-STYLE-TYPE: none; MARGIN: 0px 4px; WIDTH: 180px; DISPLAY: block; FLOAT: left
+}
+#submenu UL LI SPAN {
+	LINE-HEIGHT: 32px; WIDTH: 100%; DISPLAY: block; FLOAT: left; HEIGHT: 32px
+}
+#submenu UL LI.subchannel DIV {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 200%; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-LEFT: 25px; PADDING-TOP: 0px; _margin-top: -15px
+}

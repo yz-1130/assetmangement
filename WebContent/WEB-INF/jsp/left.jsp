@@ -74,7 +74,9 @@
                 
                 <ul class="treeview-menu">
                     <li><a href="Licai-management.do"><i class="fa fa-circle-o"></i>理财管理</a></li>
-                    <!-- <li><a href="Dati-management.do" onclick="return qq();"><i class="fa fa-circle-o"></i>编写题目</a></li> -->
+                    <input type ="button" value="跳转" onclick="window.location.href='../onlineLiCai/index.html'">
+                    <li><a href="../onlineLiCai/index.html"><i class="fa fa-circle-o"></i>理财管理</a></li>
+
                 </ul>
             </li>
             
@@ -99,7 +101,6 @@
                 </a>
                 <ul class="treeview-menu">
                    <li><a href="Huangjin-management.do" "><i class="fa fa-circle-o"></i>黄金管理</a></li>
-                   <!--  <li><a href="Luntan-management.do" onclick="return qq();"><i class="fa fa-circle-o"></i>论坛管理</a></li> -->
                 </ul>
             </li>
             
@@ -111,7 +112,6 @@
                 </a>
                 <ul class="treeview-menu">
                    <li><a href="Jijin-management.do" "><i class="fa fa-circle-o"></i>基金管理</a></li>
-                   <!--  <li><a href="Luntan-management.do" onclick="return qq();"><i class="fa fa-circle-o"></i>论坛管理</a></li> -->
                 </ul>
             </li>
             
@@ -147,6 +147,7 @@
                 </a>
                 <ul class="treeview-menu">
                    <li><a href="Fangdai-management.do" "><i class="fa fa-circle-o"></i>房.车贷管理</a></li>
+                    <li><a href="https://www.fangdaijisuanqi.com/gongjijindaikuanjisuanqi/"><i class="fa fa-circle-o"></i>房车贷款计算器</a></li>
                 </ul>
             </li>
         </ul>
