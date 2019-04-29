@@ -72,10 +72,10 @@
                     <span class="fa fa-angle-left pull-right"></span>
                 </a>
                 
-                <ul class="treeview-menu">
+                <ul class="treeview-menu" >
                     <li><a href="Licai-management.do"><i class="fa fa-circle-o"></i>理财管理</a></li>
-                    <input type ="button" value="跳转" onclick="window.location.href='../onlineLiCai/index.html'">
-                    <li><a href="../onlineLiCai/index.html"><i class="fa fa-circle-o"></i>理财管理</a></li>
+                    <li style="color: #c9302c"><a href="#" onclick="window.open('https://www.yiqihao.com/toolbox')"><i class="fa fa-circle-o" style="color: #c9302c"></i>网页理财计算器</a></li>
+                    <li style="color: #c9302c"><a href="#" onclick="window.open('licaijisuqnqi.html')"><i class="fa fa-circle-o" style="color: #c9302c"></i>本地理财计算器</a></li>
 
                 </ul>
             </li>

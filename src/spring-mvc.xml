@@ -88,9 +88,9 @@
 	
 	<mvc:interceptors>
 	<mvc:interceptor>
-<!-- 	<mvc:mapping path="/*.do"/> -->
-	<!-- <mvc:mapping path="/*.jsp"/> -->
-	<!-- <mvc:mapping path="/*.html"/> -->
+	<mvc:mapping path="/*.do"/>
+	 <mvc:mapping path="/*.jsp"/>
+		<mvc:mapping path="/*.html"/>
 	<mvc:mapping path="/**"/>
 	
 <!-- 	<mvc:exclude-mapping path="/loginaccess.do"/>
@@ -101,5 +101,10 @@
 	</bean>
 	</mvc:interceptor>
 	</mvc:interceptors>
+
+
+
+	<!--<mvc:annotation-driven/>-->
+	<!--<mvc:default-servlet-handler/>-->
 
 </beans>
