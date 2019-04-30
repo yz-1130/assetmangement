@@ -7,6 +7,11 @@
  <meta charset="UTF-8"><title>assetmangement</title>
    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/table.css"/>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="https://cdn.bootcss.com/jszip/3.1.5/jszip.min.js"></script>
+    <script type="text/javascript" src="../../js/table/FileSaver.js"></script>
+    <script type="text/javascript" src="../../js/table/excel-gen.js"></script>
+    <script type="text/javascript" src="../../js/table/demo.page.js"></script>
    
 </head>
 <body>
@@ -22,7 +27,7 @@
 
     <div class="littletitle">搜索查询</div>
 编号:<input type="text" placeholder="按编号查询" name="id" class="text">&nbsp;&nbsp;
-银行卡信息:<input type="text" placeholder="按银行卡信息查询" name="xinxi" class="text">&nbsp;&nbsp;
+卡号信息:<input type="text" placeholder="按银行卡信息查询" name="xinxi" class="text">&nbsp;&nbsp;
   <img src="${pageContext.request.contextPath}/images/query.jpg" class="img1">&nbsp;<input type="submit" value="查询" class="button">&nbsp;&nbsp;
   <img src="${pageContext.request.contextPath}/images/add.png" class="img2">&nbsp;<a href="Dingqi-insert.do">新增</a>&nbsp;&nbsp;
 
@@ -30,7 +35,10 @@
 </div>
 
 <div class="main">
-    <table id="cs_table" border-color="blue" class="data-table">
+        <div >
+            <button type="button" class="btn btn-success btn-block" id="generate-excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i> 将表格转换为Excel</button>
+        </div>
+    <table id="test_table" border-color="blue" class="data-table">
         <thead>
         <tr class="head">
 				<td>编号</td>
