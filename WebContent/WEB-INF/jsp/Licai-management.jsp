@@ -31,8 +31,8 @@
 <img src="${pageContext.request.contextPath}/images/reset.png" class="img3">&nbsp;<input type="reset" value="重置" class="button">   
 </div>
 
-<div class="main">
-	<div >
+<div class="main" >
+	<div class="excle">
 		<button type="button" class="btn btn-success btn-block" id="generate-excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i> 将表格转换为Excel</button>
 	</div>
     <table id="test_table" border-color="blue" class="data-table">
@@ -40,11 +40,11 @@
         <tr class="head">
 				<td>编号</td>
 				<td>产品类型</td>
-				<td>购买金额</td>
+				<td>购买金额(￥)</td>
 				<td>购买时间</td>
 				<td>购买费率</td>
 				<td>赎回时间</td>
-				<td>预期收益</td>
+				<td>预期收益(￥)</td>
 				<td>备注</td>
 			    <td>操作</td>
 

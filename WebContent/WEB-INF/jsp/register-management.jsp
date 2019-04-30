@@ -31,7 +31,7 @@
 </div>
 
 <div class="main">
-    <div >
+    <div class="excle">
         <button type="button" class="btn btn-success btn-block" id="generate-excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i> 将表格转换为Excel</button>
     </div>
     <table id="test_table" border-color="blue" class="data-table">

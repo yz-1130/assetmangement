@@ -32,7 +32,7 @@
 </div>
 
 <div class="main">
-    <div >
+    <div class="excle">
         <button type="button" class="btn btn-success btn-block" id="generate-excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i> 将表格转换为Excel</button>
     </div>
     <table id="test_table" border-color="blue" class="data-table">
@@ -41,8 +41,8 @@
 				<td>编号</td>
 				<td>贷款类型</td>
 				<td>购入日期</td>
-				<td>首付金额</td>
-				<td>每月支付</td>
+				<td>首付金额(￥)</td>
+				<td>每月支付(￥)</td>
 				<td>还款年限</td>
                 <td>操作</td>
 

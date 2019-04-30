@@ -11,9 +11,16 @@ html,body{
 .level{
     background-color: #f4f4f4;
     border-bottom: solid 0px #bcbcbc;
-    width: 100%;
+    width: 10000px;
     height: 40px;
     margin: 0px;
+    position: relative;
+}
+.excle{
+    width:1235px;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 20px;
     position: relative;
 }
 .level img{
