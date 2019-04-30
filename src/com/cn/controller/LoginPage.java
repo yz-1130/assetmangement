@@ -18,12 +18,10 @@ import com.cn.domain.User;
 public class LoginPage {
 	
 
-	//��ת����¼ҳ��
 	@RequestMapping("login.do")
 	public String login(){
 		return "login";
 	}
-	//��ת��ע��ҳ��
 	@RequestMapping("register.do")
 	public String register(HttpServletRequest req){
 User ret = new User();
@@ -33,11 +31,7 @@ ret.setUsername("test");
 		
 		return "register";
 	}
-	//��߲���ҳ�����ת
-	//��ת��Ա����������
-	
 
-	//��������ҳ����ת
 	@RequestMapping("goods-insert.do")
 	public String ginsert(){
 		return "goods-insert";

@@ -147,7 +147,8 @@
                 </a>
                 <ul class="treeview-menu">
                    <li><a href="Fangdai-management.do" "><i class="fa fa-circle-o"></i>房.车贷管理</a></li>
-                    <li><a href="https://www.fangdaijisuanqi.com/gongjijindaikuanjisuanqi/"><i class="fa fa-circle-o"></i>房车贷款计算器</a></li>
+                    <li style="color: #c9302c"><a href="#" onclick="window.open('houseCalculator.html')"><i class="fa fa-circle-o" style="color: #c9302c"></i>房贷计算器</a></li>
+
                 </ul>
             </li>
         </ul>

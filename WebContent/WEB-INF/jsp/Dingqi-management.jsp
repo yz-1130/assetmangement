@@ -15,8 +15,11 @@
 <div class="all">
 <div class="level">
     <img src="${pageContext.request.contextPath}/images/house.png">
+</div>
+
 <form action="selectDingqi.do" method="post">
 <div class="whole">
+
     <div class="littletitle">搜索查询</div>
 编号:<input type="text" placeholder="按编号查询" name="id" class="text">&nbsp;&nbsp;
 银行卡信息:<input type="text" placeholder="按银行卡信息查询" name="xinxi" class="text">&nbsp;&nbsp;

@@ -22,18 +22,14 @@ import com.cn.service.LoginDao;
 @Controller
 @SessionAttributes(value={"drivers","waiters","lines"})
 public class LoginController {
-	//��֤�û���¼
 	@Autowired
 	LoginDao login;
 
-	
-	
-	
+
 	@RequestMapping("loginaccess.do")
 	public String checkuser(User user1,HttpServletRequest req,Model model){
 		User ret = login.checkuser(user1);
-		
-		//model.addAttribute("u",ret);
+
 		if(ret!=null){
 			
 			HttpSession session = req.getSession(true);  

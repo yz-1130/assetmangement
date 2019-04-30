@@ -72,8 +72,7 @@ public class RegisterController {
 		
 	}
 	
-	
-	//璺宠浆鍒板厷鍛樹俊鎭〉闈�
+
 	@RequestMapping("QdangyuanInfo-management.do")
 	public String gotoDangYuan(Model model){
 		
