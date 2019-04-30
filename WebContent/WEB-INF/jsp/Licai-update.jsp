@@ -42,43 +42,43 @@
 
 <div class="content">
    <c:forEach items="${result}" var="b2">
-<form action="updateLicai.do?id=${b2.id}" method="post">
+<form action="updateLicai.do?id=${b2.id}" method="post" id="form">
 <tr>
-                    <td class="title">&nbsp;编&nbsp;号</td> 
+                    <td class="title">&nbsp;编&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     <td class="edit">
                     <input type="text" class="txt"
 	name="id" value="${b2.id}" readonly='true'></td>
-</tr>
+</tr></p>
 <tr>
-	<td class="title">产品类型</td>
+	<td class="title">产品类型:</td>
  	<td class="edit"><input type="text" class="txt" name="leixing" value="${b2.leixing}" > </td>
-</tr> 
+</tr> </p>
 <tr>
-	<td class="title">购买金额</td>
+	<td class="title">购买金额:</td>
  	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" > </td>
-</tr> 
+</tr> </p>
 <tr>
-	<td class="title">购买时间</td>
+	<td class="title">购买时间:</td>
  	<td class="edit"><input type="text" class="txt" name="shijian" value="${b2.shijian}" > </td>
-</tr> 
+</tr> </p>
 <tr>
-	<td class="title">购买费率</td>
+	<td class="title">购买费率:</td>
  	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" > </td>
-</tr> 
+</tr> </p>
 <tr>
-	<td class="title">赎回时间</td>
+	<td class="title">赎回时间:</td>
  	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" > </td>
-</tr> 
+</tr> </p>
 <tr>
-	<td class="title">预期收益</td>
+	<td class="title">预期收益:</td>
  	<td class="edit"><input type="text" class="txt" name="yuqi" value="${b2.yuqi}" > </td>
-</tr> 
+</tr> </p>
 <tr>
-	<td class="title">备注</td>
+	<td class="title">备注:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
  	<td class="edit"><input type="text" class="txt" name="remark" value="${b2.remark}" > </td>
-</tr> 
+</tr> </p>
 
-</table><br>
+</table><br></p>
 </c:forEach>
 
 

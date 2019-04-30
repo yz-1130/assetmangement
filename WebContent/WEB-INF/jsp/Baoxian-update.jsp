@@ -42,46 +42,52 @@
 
 <div class="content">
    <c:forEach items="${result}" var="b2">
-<form action="updateBaoxian.do?id=${b2.id}" method="post">
+<form action="updateBaoxian.do?id=${b2.id}" method="post" id="form">
 <tr>
-                    <td class="title">&nbsp;编&nbsp;号</td> 
-                    <td class="edit">
+                    <td class="title">&nbsp;编&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     <input type="text" class="txt"
-	name="id" value="${b2.id}" readonly='true'></td>
+	                name="id" value="${b2.id}" readonly='true'></td>
 </tr>
+    </p>
 <tr>
-	<td class="title">保险类型</td>
+    <td class="title">保险类型:</td>
  	<td class="edit"><input type="text" class="txt" name="leixing" value="${b2.leixing}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">被保人</td>
+    <td class="title">被保人:&nbsp;&nbsp;&nbsp;</td>
  	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">投保年龄</td>
+    <td class="title">投保年龄:</td>
  	<td class="edit"><input type="text" class="txt" name="shijian" value="${b2.shijian}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">缴费方式</td>
+	<td class="title">缴费方式:</td>
  	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">定缴金额</td>
+	<td class="title">定缴金额:</td>
  	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">保障年限</td>
+	<td class="title">保障年限:</td>
  	<td class="edit"><input type="text" class="txt" name="shuhuia" value="${b2.shuhuia}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">保障金额</td>
+	<td class="title">保障金额:</td>
  	<td class="edit"><input type="text" class="txt" name="shuhuib" value="${b2.shuhuib}" > </td>
-</tr> 
+</tr>
+    </p>
 
 </table><br>
+    </p>
 </c:forEach>
-
-
         <input type="submit" value="保存" id="save"><input type="reset" value="重置" id="reset">
     </form>
 </div>

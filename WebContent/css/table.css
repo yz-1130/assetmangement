@@ -10,10 +10,10 @@ html,body{
 }
 .level{
     background-color: #f4f4f4;
-    border-bottom: solid 1px #bcbcbc;
+    border-bottom: solid 0px #bcbcbc;
     width: 100%;
     height: 40px;
-    margin: 2px;
+    margin: 0px;
     position: relative;
 }
 .level img{

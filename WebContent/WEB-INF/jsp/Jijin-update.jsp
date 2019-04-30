@@ -42,31 +42,31 @@
 
 <div class="content">
    <c:forEach items="${result}" var="b2">
-<form action="updateJijin.do?id=${b2.id}" method="post">
+<form action="updateJijin.do?id=${b2.id}" method="post" id="form">
 <tr>
-                    <td class="title">&nbsp;编&nbsp;号</td> 
+                    <td class="title">&nbsp;编&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     <td class="edit">
                     <input type="text" class="txt"
 	name="id" value="${b2.id}" readonly='true'></td>
-</tr>
+</tr></p>
 <tr>
-	<td class="title">购买类型</td>
+	<td class="title">购买类型:</td>
  	<td class="edit"><input type="text" class="txt" name="leixing" value="${b2.leixing}" > </td>
-</tr> 
+</tr> </p>
 <tr>
-	<td class="title">定投金额</td>
+	<td class="title">定投金额:</td>
  	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" > </td>
-</tr> 
+</tr> </p>
 <tr>
-	<td class="title">定投间隔</td>
+	<td class="title">定投间隔:</td>
  	<td class="edit"><input type="text" class="txt" name="shijian" value="${b2.shijian}" > </td>
-</tr> 
+</tr> </p>
 <tr>
-	<td class="title">备注</td>
+	<td class="title">备注：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
  	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" > </td>
-</tr> 
-
-</table><br>
+</tr>
+    </p>
+    </table><br></p>
 </c:forEach>
 
 

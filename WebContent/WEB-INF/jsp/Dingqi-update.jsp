@@ -43,39 +43,47 @@
 
 <div class="content">
    <c:forEach items="${result}" var="b2">
-<form action="updateDingqi.do?id=${b2.id}" method="post">
+<form action="updateDingqi.do?id=${b2.id}" method="post" id="form">
 <tr>
-                    <td class="title">&nbsp;编&nbsp;号</td> 
+                    <td class="title">&nbsp;编&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     <td class="edit">
                     <input type="text" class="txt"
 	name="id" value="${b2.id}" readonly='true'></td>
 </tr>
+    </p>
 <tr>
-	<td class="title">银行卡信息</td>
+	<td class="title">银行卡信息:</td>
  	<td class="edit"><input type="text" class="txt" name="xinxi" value="${b2.xinxi}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">银行卡姓名</td>
+	<td class="title">银行卡姓名:</td>
  	<td class="edit"><input type="text" class="txt" name="xingming" value="${b2.xingming}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">存款金额</td>
+	<td class="title">存款金额:&nbsp;&nbsp;&nbsp;</td>
  	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">定期时长</td>
+	<td class="title">定期时长:&nbsp;&nbsp;&nbsp;</td>
  	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">到期日期及提醒</td>
+	<td class="title">到期提醒:&nbsp;&nbsp;&nbsp;</td>
  	<td class="edit"><input type="text" class="txt" name="daoqi" value="${b2.daoqi}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">备注</td>
+	<td class="title">备注:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
  	<td class="edit"><input type="text" class="txt" name="remark" value="${b2.remark}" > </td>
-</tr> 
+</tr>
+    </p>
 
 </table><br>
+    </p>
 </c:forEach>
 
 

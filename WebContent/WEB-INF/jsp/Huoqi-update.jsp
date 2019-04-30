@@ -42,27 +42,28 @@
 
 <div class="content">
    <c:forEach items="${result}" var="b2">
-<form action="updateHuoqi.do?id=${b2.id}" method="post">
+<form action="updateHuoqi.do?id=${b2.id}" method="post" id="form">
 <tr>
-                    <td class="title">&nbsp;编&nbsp;号</td> 
+                    <td class="title">&nbsp;编&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     <td class="edit">
                     <input type="text" class="txt"
 	name="id" value="${b2.id}" readonly='true'></td>
-</tr>
+</tr></p>
 <tr>
-	<td class="title">银行卡信息</td>
+	<td class="title">银行卡信息:</td>
  	<td class="edit"><input type="text" class="txt" name="xinxi" value="${b2.xinxi}" > </td>
-</tr> 
+</tr> </p>
 <tr>
-	<td class="title">银行卡姓名</td>
+	<td class="title">银行卡姓名:</td>
  	<td class="edit"><input type="text" class="txt" name="xingming" value="${b2.xingming}" > </td>
-</tr> 
+</tr> </p>
 <tr>
-	<td class="title">存款金额</td>
+	<td class="title">存款金额:&nbsp;&nbsp;&nbsp;</td>
  	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" > </td>
-</tr> 
-
+</tr>
+    </p>
 </table><br>
+    </p>
 </c:forEach>
 
 

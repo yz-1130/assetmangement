@@ -43,35 +43,41 @@
 
 <div class="content">
    <c:forEach items="${result}" var="b2">
-<form action="updateFangdai.do?id=${b2.id}" method="post">
+<form action="updateFangdai.do?id=${b2.id}" method="post" id="form">
 <tr>
-                    <td class="title">&nbsp;编&nbsp;号</td> 
+                    <td class="title">&nbsp;编&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     <td class="edit">
                     <input type="text" class="txt"
 	name="id" value="${b2.id}" readonly='true'></td>
 </tr>
+    </p>
 <tr>
-	<td class="title">贷款类型</td>
+	<td class="title">贷款类型:</td>
  	<td class="edit"><input type="text" class="txt" name="leixing" value="${b2.leixing}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">购入日期</td>
+	<td class="title">购入日期:</td>
  	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">首付金额</td>
+	<td class="title">首付金额:</td>
  	<td class="edit"><input type="text" class="txt" name="shijian" value="${b2.shijian}" > </td>
-</tr> 
+</tr>
+    </p>
 <tr>
-	<td class="title">每月支付</td>
+	<td class="title">每月支付:</td>
  	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" > </td>
-</tr> 
+</tr>
+<p>
 <tr>
-	<td class="title">还款年限</td>
+	<td class="title">还款年限:</td>
  	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" > </td>
-</tr> 
-
+</tr>
+    </p>
 </table><br>
+    </p>
 </c:forEach>
 
 
