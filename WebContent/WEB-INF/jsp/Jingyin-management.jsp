@@ -44,6 +44,7 @@
 				<td>买入费用</td>
 				<td>购买人</td>
 				<td>备注</td>
+                <td>操作</td>
 
   </tr>
         </thead>

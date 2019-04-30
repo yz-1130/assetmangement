@@ -46,6 +46,7 @@
 				<td>定缴金额</td>
 				<td>保障年限</td>
 				<td>保障金额</td>
+			    <td>操作</td>
 
   </tr>
         </thead>
@@ -61,10 +62,10 @@
 				<td>${b2.shuhuia}</td>
 				<td>${b2.shuhuib}</td>
 
-<td>
-<a href="${pageContext.request.contextPath}/gotoUpdateBaoxian.do?id=${b2.id}" >修改</a>&nbsp;
-<a href="${pageContext.request.contextPath}/deleteBaoxian.do?id=${b2.id}" >删除</a>
-</td>		
+				<td>
+				<a href="${pageContext.request.contextPath}/gotoUpdateBaoxian.do?id=${b2.id}" >修改</a>&nbsp;
+				<a href="${pageContext.request.contextPath}/deleteBaoxian.do?id=${b2.id}" >删除</a>
+				</td>
 			</tr>
 		</c:forEach>
         </tbody>

@@ -44,6 +44,7 @@
 				<td>卖出价</td>
 				<td>购买数额</td>
 				<td>备注</td>
+                <td>操作</td>
 
   </tr>
         </thead>
