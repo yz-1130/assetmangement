@@ -40,43 +40,44 @@
 </div>
 
 <div class="content">
+
 <form action="insertDingqi.do" method="post" id="form">
 		<tr>
 			<td class="title">银行卡信息:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="xinxi" ></td>
 		</tr>
-
+</p>
 		<tr>
 			<td class="title">银行卡姓名:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="xingming" ></td>
 		</tr>
-
+	</p>
 		<tr>
-			<td class="title">存款金额:</td>
+			<td class="title">存款金额:&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
 			<input type="text" class="txt" name="jine" ></td>
 		</tr>
-
+	</p>
 		<tr>
-			<td class="title">定期时长:</td>
+			<td class="title">定期时长:&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shichang" ></td>
 		</tr>
-
+	</p>
 		<tr>
-			<td class="title">到期日期及提醒:</td>
+			<td class="title">到期日期:&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
 			<input type="text" class="txt" name="daoqi" ></td>
 		</tr>
-
+	</p>
 		<tr>
-			<td class="title">备注:</td>
+			<td class="title">备注:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
 			<input type="text" class="txt" name="remark" ></td>
 		</tr>
-
+	</p>
 
 	</table><br>
        

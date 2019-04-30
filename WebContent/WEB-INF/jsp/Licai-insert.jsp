@@ -47,45 +47,46 @@
 			<input type="text" class="txt" name="leixing" ></td>
 		</tr>
 
+</p>
 		<tr>
 			<td class="title">购买金额:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="jine" ></td>
 		</tr>
-
+	</p>
 		<tr>
 			<td class="title">购买时间:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shijian" ></td>
 		</tr>
-
+	</p>
 		<tr>
 			<td class="title">购买费率:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shichang" ></td>
 		</tr>
-
+	</p>
 		<tr>
 			<td class="title">赎回时间:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shuhui" ></td>
 		</tr>
-
+	</p>
 		<tr>
 			<td class="title">预期收益:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="yuqi" ></td>
 		</tr>
-
+	</p>
 		<tr>
-			<td class="title">备注:</td>
+			<td class="title">备注:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
 			<input type="text" class="txt" name="remark" ></td>
 		</tr>
 
-
+	</p>
 	</table><br>
-       
+	</p>
         <input type="submit" value="保存" id="save"><input type="reset" value="重置" id="reset">
     </form>
 </div>

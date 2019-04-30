@@ -26,6 +26,7 @@
             color: red;
             vertical-align: top;
         }
+
     </style>
     <script src="${pageContext.request.contextPath}/My97DatePicker/WdatePicker.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
@@ -41,30 +42,33 @@
 
 <div class="content">
 <form action="insertJijin.do" method="post" id="form">
-		<tr>
+		<tr >
 			<td class="title">购买类型:</td>
-			<td class="edit">
 			<input type="text" class="txt" name="leixing" ></td>
 		</tr>
-
+	<p>
+	<div class="clearfix"></div>
 		<tr>
 			<td class="title">定投金额:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="jine" ></td>
 		</tr>
-
+	<p>
+	<div class="clearfix"></div>
 		<tr>
 			<td class="title">定投间隔:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shijian" ></td>
 		</tr>
-
+	<p>
+	<div class="clearfix"></div>
 		<tr>
-			<td class="title">备注:</td>
+			<td class="title">备注:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shuhui" ></td>
 		</tr>
-
+	<p>
+	<div class="clearfix"></div>
 
 	</table><br>
        

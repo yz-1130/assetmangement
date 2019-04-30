@@ -37,7 +37,6 @@
 <div class="all">
 <div class="level">
     <img src="${pageContext.request.contextPath}/images/house.png">
-    <!-- <div class="txt">&nbsp;首页&nbsp;&gt;&nbsp;&nbsp;&gt;&nbsp;站点管理</div> -->
 </div>
 
 <div class="content">
@@ -47,34 +46,34 @@
 			<td class="edit">
 			<input type="text" class="txt" name="leixing" ></td>
 		</tr>
-
+	</p>
 		<tr>
 			<td class="title">购入日期:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="jine" ></td>
 		</tr>
-
+</p>
 		<tr>
 			<td class="title">首付金额:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shijian" ></td>
 		</tr>
-
+	</p>
 		<tr>
 			<td class="title">每月支付:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shichang" ></td>
 		</tr>
-
+	</p>
 		<tr>
 			<td class="title">还款年限:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shuhui" ></td>
 		</tr>
-
+	</p>
 
 	</table><br>
-       
+	</p>
         <input type="submit" value="保存" id="save"><input type="reset" value="重置" id="reset">
     </form>
 </div>

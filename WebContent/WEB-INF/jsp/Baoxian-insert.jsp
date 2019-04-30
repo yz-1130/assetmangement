@@ -36,7 +36,7 @@
 <%@ include file="left.jsp"%>
 <div class="all">
 <div class="level">
-    <img src="${pageContext.request.contextPath}/images/back.gif">
+    <img src="${pageContext.request.contextPath}/images/">
 </div>
 
 <div class="content">
@@ -46,43 +46,43 @@
 			<td class="edit">
 			<input type="text" class="txt" name="leixing" ></td>
 		</tr>
-
+		</p>
 		<tr>
-			<td class="title">被保人:</td>
+			<td class="title">被保人:&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
 			<input type="text" class="txt" name="jine" ></td>
 		</tr>
-
+	    </p>
 		<tr>
 			<td class="title">投保年龄:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shijian" ></td>
 		</tr>
-
+	</p>
 		<tr>
 			<td class="title">缴费方式:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shichang" ></td>
 		</tr>
-
+	</p>
 		<tr>
 			<td class="title">定缴金额:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shuhui" ></td>
 		</tr>
-
+	</p>
 		<tr>
 			<td class="title">保障年限:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shuhuia" ></td>
 		</tr>
-
+	</p>
 		<tr>
 			<td class="title">保障金额:</td>
 			<td class="edit">
 			<input type="text" class="txt" name="shuhuib" ></td>
 		</tr>
-
+	</p>
 
 	</table><br>
        
