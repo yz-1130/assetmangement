@@ -25,9 +25,7 @@
     	alert('此操作仅限管理员');
     	return false;
     }
-    	
-    	
-    	
+
     }
     
     </script>
@@ -100,7 +98,7 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                   <li><a href="Huangjin-management.do" "><i class="fa fa-circle-o"></i>黄金管理</a></li>
+                   <li><a href="Huangjin-management.do" ><i class="fa fa-circle-o"></i>黄金管理</a></li>
                 </ul>
             </li>
             
@@ -111,7 +109,7 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                   <li><a href="Jijin-management.do" "><i class="fa fa-circle-o"></i>基金管理</a></li>
+                   <li><a href="Jijin-management.do" ><i class="fa fa-circle-o"></i>基金管理</a></li>
                 </ul>
             </li>
             
@@ -122,7 +120,7 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                   <li><a href="Jiedai-management.do" "><i class="fa fa-circle-o"></i>借贷管理</a></li>
+                   <li><a href="Jiedai-management.do" ><i class="fa fa-circle-o"></i>借贷管理</a></li>
                   <!--   <li><a href="Luntan-management.do" onclick="return qq();"><i class="fa fa-circle-o"></i>论坛管理</a></li> -->
                 </ul>
             </li>
@@ -134,8 +132,7 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                   <li><a href="Baoxian-management.do" "><i class="fa fa-circle-o"></i>保险</a></li>
-                    <!-- <li><a href="Luntan-management.do" onclick="return qq();"><i class="fa fa-circle-o"></i>论坛管理</a></li> -->
+                   <li><a href="Baoxian-management.do" ><i class="fa fa-circle-o"></i>保险</a></li>
                 </ul>
             </li>
             
@@ -146,11 +143,46 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                   <li><a href="Fangdai-management.do" "><i class="fa fa-circle-o"></i>房.车贷管理</a></li>
+                   <li><a href="Fangdai-management.do" ><i class="fa fa-circle-o"></i>房.车贷管理</a></li>
                     <li style="color: #c9302c"><a href="#" onclick="window.open('houseCalculator.html')"><i class="fa fa-circle-o" style="color: #c9302c"></i>房贷计算器</a></li>
 
                 </ul>
             </li>
+            <li class="treeview">
+                <a href="#">
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="Jingyin-management.do" ></a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="Jingyin-management.do" ></a></li>
+                </ul>
+            </li>     <li class="treeview">
+            <a href="#">
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="Jingyin-management.do" ></a></li>
+            </ul>
+        </li>     <li class="treeview">
+            <a href="#">
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="Jingyin-management.do" ></a></li>
+            </ul>
+        </li>     <li class="treeview">
+            <a href="#">
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="Jingyin-management.do" ></a></li>
+            </ul>
+        </li>
+
+
+
         </ul>
     </section>
 </aside>

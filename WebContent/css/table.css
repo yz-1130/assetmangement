@@ -7,6 +7,8 @@ html,body{
     margin-left: 227px;
     margin-top: -522px;
     float: left;
+    background-image: url("../images/mainBack2.jpg") ;
+    background-size: 1555px 1000px;
 }
 .level{
     background-color: #f4f4f4;
