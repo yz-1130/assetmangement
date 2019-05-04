@@ -12,15 +12,6 @@
 	<script type="text/javascript" src="../../js/table/FileSaver.js"></script>
 	<script type="text/javascript" src="../../js/table/excel-gen.js"></script>
 	<script type="text/javascript" src="../../js/table/demo.page.js"></script>
-	<%--分页查询--%>
-	<script src="http://www.jq22.com/jquery/angular-1.4.6.js"></script>
-	<script type="text/javascript" src="../../js/page/ui-bootstrap-tpls.min.js"></script>
-	<link rel="stylesheet" href="../../css/bootstrap.min.css">
-	<style>
-		.panel{width:60%;margin:0 auto;text-align: center;}
-		.form-inline{width:60%;margin:0 auto;}
-	</style>
-
 </head>
 <body>
 <%@ include file="top.jsp"%>
@@ -44,7 +35,7 @@
 	<div class="excle">
 		<button type="button" class="btn btn-success btn-block" id="generate-excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i> 将表格转换为Excel</button>
 	</div>
-    <table id="test_table " border-color="blue" class="data-table table">
+    <table id="test_table " border-color="blue" class="data-table">
         <thead>
         <tr class="head">
 				<td>编号</td>
@@ -81,63 +72,6 @@
     </table>
 
 </div>
-	<div class="row form-inline">
-		<div class="col-md-8">
-			<uib-pagination total-items="page.totalCount" ng-model="page.pageNo" max-size="5" class="samplePage pagination" boundary-links="true" force-ellipses="false" first-text="首页" last-text="末页" previous-text="上一页" next-text="下一页" items-per-page="page.limit" ng-change="pageChanged()" boundary-link-numbers="true">
-			</uib-pagination>
-		</div>
-		<div class="col-md-4">
-			<input type="text" class="form-control" style="width:100px;margin:25px 0" name="" ng-model="go" />
-			<a class="btn btn-primary btn-sm" ng-click="setPage(go)">跳转</a>
-		</div>
-	</div>
-	<script type="text/javascript">
-		var pageApp = angular.module("app",['ui.bootstrap']);
-		pageApp.controller("ctrl",function($scope, $http){
-			$http({
-				method: 'GET',
-				url: 'test.json'
-			}).success(function (response) {
-				//总条数
-				$scope.total = response.total;
-				//反转函数转化abcd转dcba
-				$scope.data = response.data.reverse();
-				//选择显示的条数
-				$scope.values = [{"limit":3},{"limit":4},{"limit":5},{"limit":6},{"limit":7},{"limit":8}];
-				//默认显示的条数
-				$scope.selectedLimit=$scope.values[0];
-				//默认显示当前页数
-				$scope.currentPage = 1;
-				if($scope.data != null){
-					$scope.datas = $scope.data.slice($scope.selectedLimit.limit*($scope.currentPage-1),$scope.selectedLimit.limit*$scope.currentPage);
-				}else{
-					alert($scope.data);
-				}
-				$scope.page = {
-					"limit":$scope.selectedLimit.limit,"pageSize":5,"pageNo":$scope.currentPage,"totalCount":$scope.total};
-			})
-			$scope.change = function(selectedLimit){
-				$scope.page.limit = selectedLimit.limit;
-				$scope.datas = $scope.data.slice($scope.selectedLimit.limit*($scope.page.pageNo-1),$scope.selectedLimit.limit*$scope.page.pageNo);
-			}
-			$scope.pageChanged = function(){
-				$scope.page.limit = $scope.selectedLimit.limit;
-				$scope.datas = $scope.data.slice($scope.selectedLimit.limit*($scope.page.pageNo-1),$scope.selectedLimit.limit*$scope.page.pageNo);
-			}
-			$scope.setPage = function (go) {
-				$scope.length = Math.ceil($scope.total/$scope.selectedLimit.limit);
-				console.log($scope.length);
-				if(go > $scope.length){
-					$scope.page.pageNo =  $scope.length;
-					console.log($scope.length);
-
-				}else{
-					$scope.page.pageNo=go;
-				}
-				$scope.datas = $scope.data.slice($scope.selectedLimit.limit*($scope.page.pageNo-1),$scope.selectedLimit.limit*$scope.page.pageNo);
-			};
-		});
-	</script>
 </form>
 
 </div>

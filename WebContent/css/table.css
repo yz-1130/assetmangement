@@ -37,7 +37,7 @@ html,body{
     left: 40px;
 }
 .whole{
-    border: solid 1px #d0d0d0;
+    border: solid 0px #d0d0d0;
     height: 70px;
     padding-left: 10px;
     margin-top: 25px;
@@ -48,7 +48,7 @@ html,body{
     width: 90px;
     text-align: center;
     height: 30px;
-    background-color: white;
+
     margin-top: -12px;
     margin-left: 20px;
 }
