@@ -47,8 +47,11 @@
 				<td>存款金额(￥)</td>
 				<td>定期时长</td>
 				<td>到期日期及提醒</td>
+                <td>利率</td>
+                <td>到期金额</td>>
 				<td>备注</td>
                 <td>操作</td>
+
 
   </tr>
         </thead>
@@ -60,6 +63,8 @@
 				<td>${b2.xingming}</td>
 				<td>${b2.jine}</td>
 				<td>${b2.shichang}</td>
+                <td>${b2.interest}</td>
+                <td>${b2.totalMoney}</td>
 				<td>${b2.daoqi}</td>
 				<td>${b2.remark}</td>
 

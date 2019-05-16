@@ -37,12 +37,18 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<if test="status!='' and status!=null">
             and    status=#{status}
 		</if>
+			<if test="interest!='' and interest!=null">
+				interest=#{interest}
+			</if>
+			<if test="totalMoney!='' and totalMoney!=null">
+				totalMoney=#{totalMoney}
+			</if>
 		</where>
 	</select>
 
 <!-- add new record -->
  	<insert id="insertDingqi" parameterType="com.cn.domain.Dingqi">
-  		insert into Dingqi (xinxi,xingming,jine,shichang,daoqi,remark,recordDate,userid,status) values ("${xinxi}","${xingming}","${jine}","${shichang}","${daoqi}","${remark}","${recordDate}","${userid}","${status}")
+  		insert into Dingqi (xinxi,xingming,jine,shichang,daoqi,remark,recordDate,userid,status,totalMoney,interest) values ("${xinxi}","${xingming}","${jine}","${shichang}","${daoqi}","${remark}","${recordDate}","${userid}","${status}","${totalMoney}","${interest}")
  	</insert>
 
 <!-- update -->
@@ -59,6 +65,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			<if test="recordDate!='' and recordDate!= null">recordDate=#{recordDate},</if>
 			<if test="userid!='' and userid!= null">userid=#{userid},</if>
 			<if test="status!='' and status!= null">status=#{status},</if>
+			<if test="totalMoney!='' and totalMoney!= null">totalMoney=#{totalMoney},</if>
+			<if test="interest!='' and interest!= null">interest=#{interest},</if>
 
 		</trim>
 		where id=#{id} 

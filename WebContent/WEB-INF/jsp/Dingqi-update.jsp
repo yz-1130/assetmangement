@@ -82,6 +82,12 @@
 </tr>
     </p>
 
+    <tr>
+        <td class="title">利率:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="edit"><input type="text" class="txt" name="interest" value="${b2.interest}" > </td>
+    </tr>
+    </p>
+
 </table><br>
     </p>
 </c:forEach>

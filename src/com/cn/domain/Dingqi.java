@@ -1,4 +1,7 @@
 package com.cn.domain;
+
+import java.math.BigDecimal;
+
 public class  Dingqi{
   private Integer id;
   private String xinxi;
@@ -10,6 +13,25 @@ public class  Dingqi{
   private String recordDate;
   private Integer userid;
   private String status;
+
+    public BigDecimal getInterest() {
+        return interest;
+    }
+
+    public void setInterest(BigDecimal interest) {
+        this.interest = interest;
+    }
+
+    public BigDecimal getTotalMoney() {
+        return totalMoney;
+    }
+
+    public void setTotalMoney(BigDecimal totalMoney) {
+        this.totalMoney = totalMoney;
+    }
+
+    private BigDecimal interest;
+  private BigDecimal totalMoney;
   public  Integer  getId(){
       return id;
    }
