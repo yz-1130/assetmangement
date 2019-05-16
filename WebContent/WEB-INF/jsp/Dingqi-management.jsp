@@ -63,9 +63,9 @@
 				<td>${b2.xingming}</td>
 				<td>${b2.jine}</td>
 				<td>${b2.shichang}</td>
+                <td>${b2.daoqi}</td>
                 <td>${b2.interest}</td>
                 <td>${b2.totalMoney}</td>
-				<td>${b2.daoqi}</td>
 				<td>${b2.remark}</td>
 
 <td>
