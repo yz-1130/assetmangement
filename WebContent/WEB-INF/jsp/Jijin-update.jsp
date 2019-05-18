@@ -61,11 +61,16 @@
 	<td class="title">定投间隔:</td>
  	<td class="edit"><input type="text" class="txt" name="shijian" value="${b2.shijian}" > </td>
 </tr> </p>
-<tr>
-	<td class="title">备注：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
- 	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" > </td>
-</tr>
+    <tr>
+        <td class="title">定投日期:</td>
+        <td class="edit"><input type="text" class="txt" name="planDate" value="${b2.planDate}" > </td>
+    </tr>
     </p>
+<tr>
+	<td class="title">备注:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+ 	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" > </td>
+</tr></p>
+
     </table><br></p>
 </c:forEach>
 

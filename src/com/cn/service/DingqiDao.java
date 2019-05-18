@@ -1,6 +1,8 @@
 package com.cn.service;
 import java.util.List;
 import java.util.List;
+
+import org.apache.ibatis.session.ResultHandler;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,6 +29,10 @@ public class  DingqiDao{
 
 	public int  insertDingqi(Dingqi  dingqi){
 	int Q= sqlSession.insert("insertDingqi",dingqi);
+		return Q;
+	}
+	public List<Dingqi>  selectTotalMoney(Dingqi  dingqi){
+		List<Dingqi> Q= sqlSession.selectList("selectTotalMoney",dingqi);
 		return Q;
 	}
 

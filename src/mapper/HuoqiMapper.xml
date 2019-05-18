@@ -28,12 +28,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<if test="status!='' and status!=null">
             and    status=#{status}
 		</if>
+			<if test="product!='' and product!=null">
+				product=#{product}
+			</if>
 		</where>
 	</select>
 
 <!-- add new record -->
  	<insert id="insertHuoqi" parameterType="com.cn.domain.Huoqi">
-  		insert into Huoqi (xinxi,xingming,jine,recordDate,userid,status) values ("${xinxi}","${xingming}","${jine}","${recordDate}","${userid}","${status}")
+  		insert into Huoqi (xinxi,xingming,jine,recordDate,userid,status,product) values ("${xinxi}","${xingming}","${jine}","${recordDate}","${userid}","${status}","${product}")
  	</insert>
 
 <!-- update -->
@@ -47,6 +50,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			<if test="recordDate!='' and recordDate!= null">recordDate=#{recordDate},</if>
 			<if test="userid!='' and userid!= null">userid=#{userid},</if>
 			<if test="status!='' and status!= null">status=#{status},</if>
+			<if test="product!='' and product!= null">product=#{product},</if>
 
 		</trim>
 		where id=#{id} 

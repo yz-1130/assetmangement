@@ -49,6 +49,10 @@
                     <input type="text" class="txt"
 	name="id" value="${b2.id}" readonly='true'></td>
 </tr></p>
+    <tr>
+        <td class="title">投资机构:&nbsp;&nbsp;&nbsp;</td>
+        <td class="edit"><input type="text" class="txt" name="product" value="${b2.product}" > </td>
+    </tr> </p>
 <tr>
 	<td class="title">银行卡信息:</td>
  	<td class="edit"><input type="text" class="txt" name="xinxi" value="${b2.xinxi}" > </td>

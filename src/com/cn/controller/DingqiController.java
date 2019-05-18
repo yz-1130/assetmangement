@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.cn.domain.User;
 import com.cn.domain.Dingqi;
 import com.cn.service.DingqiDao;
+import org.springframework.web.servlet.ModelAndView;
+
 @Controller
 	public class DingqiController {
 	@Autowired
@@ -18,14 +20,18 @@ import com.cn.service.DingqiDao;
 	//goto management page
 	@RequestMapping("Dingqi-management.do")
 	public String gotoDingqi(Model model,HttpServletRequest req){
+		//ModelAndView view = new ModelAndView("/Dingqi-management");
 		Dingqi dingqi=new Dingqi();
 		HttpSession session = req.getSession(true);  
 		User user=(User) session.getAttribute("user");
 		if(!"管理员".equalsIgnoreCase(user.getRole())){
 			dingqi.setUserid(user.getId());
 		}
+	     List<Dingqi>  totalAssetsAmount =dingqiDao.selectTotalMoney(dingqi);
+		model.addAttribute("totalAssetsAmount", totalAssetsAmount);
 		List<Dingqi> qlist=dingqiDao.selectDingqi(dingqi);
 		model.addAttribute("result", qlist);
+
 		return "Dingqi-management";
 }
 

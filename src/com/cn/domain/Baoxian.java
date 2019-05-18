@@ -11,7 +11,18 @@ public class  Baoxian{
   private String recordDate;
   private Integer userid;
   private String status;
-  public  Integer  getId(){
+
+    public String getPlanDate() {
+        return planDate;
+    }
+
+    public void setPlanDate(String planDate) {
+        this.planDate = planDate;
+    }
+
+    private String planDate;
+
+    public  Integer  getId(){
       return id;
    }
   public void setId(Integer id){

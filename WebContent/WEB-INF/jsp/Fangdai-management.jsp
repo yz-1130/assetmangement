@@ -46,7 +46,7 @@
 				<td>还款年限</td>
                 <td>操作</td>
 
-  </tr>
+        </tr>
         </thead>
         <tbody id="group_one">
         <c:forEach items="${result}" var="b2">
@@ -58,10 +58,10 @@
 				<td>${b2.shichang}</td>
 				<td>${b2.shuhui}</td>
 
-<td>
-<a href="${pageContext.request.contextPath}/gotoUpdateFangdai.do?id=${b2.id}" >修改</a>&nbsp;
-<a href="${pageContext.request.contextPath}/deleteFangdai.do?id=${b2.id}" >删除</a>
-</td>		
+                <td>
+                <a href="${pageContext.request.contextPath}/gotoUpdateFangdai.do?id=${b2.id}" >修改</a>&nbsp;
+                <a href="${pageContext.request.contextPath}/deleteFangdai.do?id=${b2.id}" >删除</a>
+                </td>
 			</tr>
 		</c:forEach>
         </tbody>

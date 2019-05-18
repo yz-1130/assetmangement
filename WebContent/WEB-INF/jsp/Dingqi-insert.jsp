@@ -7,7 +7,8 @@
  <meta charset="UTF-8">
 <title>插入信息</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/order-insert.css">
-     <style type="text/css">
+
+	<style type="text/css">
         .onError {
             background: url("${pageContext.request.contextPath}/images/error.gif") no-repeat left;
             text-indent: 20px;
@@ -29,6 +30,17 @@
     </style>
     <script src="${pageContext.request.contextPath}/My97DatePicker/WdatePicker.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript">
+		$('#datetimepicker1').datetimepicker({
+			language: 'zh-CN',
+			autoclose: true,
+			format: 'yyyy-mm-dd',
+			weekStart: 1,
+			minView: 'month',
+			todayHighlight: true
+		});
+	</script>
+	<script src="${pageContext.request.contextPath}/js/layui/lay/modules/laydate.js"></script>
   
 </head>
 <body>
@@ -42,6 +54,12 @@
 <div class="content">
 
 <form action="insertDingqi.do" method="post" id="form">
+	<tr>
+		<td class="title">投资机构:&nbsp;&nbsp;&nbsp;</td>
+		<td class="edit">
+			<input type="text" class="txt" name="xinxi" ></td>
+	</tr>
+	</p>
 		<tr>
 			<td class="title">银行卡信息:</td>
 			<td class="edit">
@@ -67,9 +85,9 @@
 		</tr>
 	</p>
 		<tr>
-			<td class="title">到期日期:&nbsp;&nbsp;&nbsp;</td>
+			<td class="title" >到期日期:&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
-			<input type="text" class="txt" name="daoqi" ></td>
+			<input type="text" class="txt" name="daoqi" id="datetimepicker1"></td>
 		</tr>
 	</p>
 		<tr>

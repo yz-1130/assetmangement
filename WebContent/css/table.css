@@ -83,7 +83,7 @@ html,body{
     height: 20px;
     position: absolute;
     top: 210px;
-    left: 730px;
+    left: 740px;
     z-index:1;
 }
 .whole .img2{
@@ -91,7 +91,7 @@ html,body{
     height: 18px;
     position: absolute;
     top:211px;
-    left: 803px;
+    left: 817px;
     z-index:1;
 }
 .whole .img3{
@@ -99,7 +99,7 @@ html,body{
     height: 20px;
     position: absolute;
     top: 209px;
-    left: 880px;
+    left: 895px;
     z-index:1;
 }
 a:focus {
@@ -129,7 +129,6 @@ table, tr, td {
     width: 98%;
     border-style: none;
     background-color: #fff;
-    /*margin-bottom: 20px;*/
     text-align: center;
     height:auto;
     overflow:hidden;

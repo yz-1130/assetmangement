@@ -61,6 +61,12 @@
 			<input type="text" class="txt" name="shijian" ></td>
 		</tr>
 	<p>
+		<tr>
+			<td class="title">定缴日期:</td>
+			<td class="edit">
+				<input type="text" class="txt" name="planDate" ></td>
+		</tr>
+	</p>
 	<div class="clearfix"></div>
 		<tr>
 			<td class="title">备注:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>

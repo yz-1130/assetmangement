@@ -42,7 +42,9 @@
 				<td>购买类型</td>
 				<td>定投金额(￥)</td>
 				<td>定投间隔</td>
-				<td>备注</td>
+            <td>定投日期</td>
+
+            <td>备注</td>
                 <td>操作</td>
 
   </tr>
@@ -54,7 +56,9 @@
 				<td>${b2.leixing}</td>
 				<td>${b2.jine}</td>
 				<td>${b2.shijian}</td>
+                <td>${b2.planDate}</td>
 				<td>${b2.shuhui}</td>
+
 
 <td>
 <a href="${pageContext.request.contextPath}/gotoUpdateJijin.do?id=${b2.id}" >修改</a>&nbsp;

@@ -13,7 +13,17 @@ public class  Dingqi{
   private String recordDate;
   private Integer userid;
   private String status;
+  private BigDecimal interest;
+  private BigDecimal totalMoney;
+    private String product;
 
+    public String getProduct() {
+        return product;
+    }
+
+    public void setProduct(String product) {
+        this.product = product;
+    }
     public BigDecimal getInterest() {
         return interest;
     }
@@ -30,8 +40,6 @@ public class  Dingqi{
         this.totalMoney = totalMoney;
     }
 
-    private BigDecimal interest;
-  private BigDecimal totalMoney;
   public  Integer  getId(){
       return id;
    }

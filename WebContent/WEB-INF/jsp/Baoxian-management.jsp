@@ -44,7 +44,9 @@
 				<td>投保年龄</td>
 				<td>缴费方式</td>
 				<td>定缴金额(￥)</td>
-				<td>保障年限</td>
+			<td>定缴日期</td>
+
+			<td>保障年限</td>
 				<td>保障金额(￥)</td>
 			    <td>操作</td>
 
@@ -59,6 +61,7 @@
 				<td>${b2.shijian}</td>
 				<td>${b2.shichang}</td>
 				<td>${b2.shuhui}</td>
+				<td>${b2.planDate}</td>
 				<td>${b2.shuhuia}</td>
 				<td>${b2.shuhuib}</td>
 

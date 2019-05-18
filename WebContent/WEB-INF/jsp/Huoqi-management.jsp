@@ -39,6 +39,7 @@
         <thead>
         <tr class="head">
 				<td>编号</td>
+                <td>投资机构</td>
 				<td>银行卡信息</td>
 				<td>银行卡姓名</td>
 				<td>存款金额(￥)</td>
@@ -50,6 +51,7 @@
         <c:forEach items="${result}" var="b2">
 			<tr>
 				<td>${b2.id}</td>
+                <td>${b2.product}</td>
 				<td>${b2.xinxi}</td>
 				<td>${b2.xingming}</td>
 				<td>${b2.jine}</td>

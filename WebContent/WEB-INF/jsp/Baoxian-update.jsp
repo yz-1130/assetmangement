@@ -74,6 +74,11 @@
  	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" > </td>
 </tr>
     </p>
+    <tr>
+        <td class="title">定缴日期:</td>
+        <td class="edit"><input type="text" class="txt" name="planDate" value="${b2.planDate}" > </td>
+    </tr>
+    </p>
 <tr>
 	<td class="title">保障年限:</td>
  	<td class="edit"><input type="text" class="txt" name="shuhuia" value="${b2.shuhuia}" > </td>

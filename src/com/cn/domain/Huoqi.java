@@ -7,6 +7,16 @@ public class  Huoqi{
   private String recordDate;
   private Integer userid;
   private String status;
+    private String product;
+    public String getProduct() {
+        return product;
+    }
+
+    public void setProduct(String product) {
+        this.product = product;
+    }
+
+
   public  Integer  getId(){
       return id;
    }

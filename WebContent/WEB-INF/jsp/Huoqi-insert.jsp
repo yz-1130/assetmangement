@@ -41,6 +41,12 @@
 
 <div class="content">
 <form action="insertHuoqi.do" method="post" id="form">
+	<tr>
+		<td class="title">投资机构:</td>
+		<td class="edit">
+			<input type="text" class="txt" name="xinxi" ></td>
+	</tr>
+	</p>
 		<tr>
 			<td class="title">银行卡信息:</td>
 			<td class="edit">

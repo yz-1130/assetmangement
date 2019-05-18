@@ -71,6 +71,12 @@
 			<input type="text" class="txt" name="shuhui" ></td>
 		</tr>
 	</p>
+	<tr>
+		<td class="title">定缴日期:</td>
+		<td class="edit">
+			<input type="text" class="txt" name="planDate" ></td>
+	</tr>
+	</p>
 		<tr>
 			<td class="title">保障年限:</td>
 			<td class="edit">

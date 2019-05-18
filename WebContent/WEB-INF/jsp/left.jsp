@@ -35,7 +35,7 @@
 <aside class="main-sidebar">
     <section  class="sidebar">
         <ul class="sidebar-menu">
-            <li class="header">系统管理</li>
+            <li class="header" style="font-family:楷体">系统管理</li>
                 
                  <li class="treeview">
                 <a href="#" >
@@ -146,6 +146,16 @@
                    <li><a href="Fangdai-management.do" ><i class="fa fa-circle-o"></i>房.车贷管理</a></li>
                     <li style="color: #c9302c"><a href="#" onclick="window.open('houseCalculator.html')"><i class="fa fa-circle-o" style="color: #c9302c"></i>房贷计算器</a></li>
 
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-pie-chart"></i>
+                    <span>身价总览</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="Fangdai-management.do" ><i class="fa fa-circle-o"></i>身价总览</a></li>
                 </ul>
             </li>
             <li class="treeview">
