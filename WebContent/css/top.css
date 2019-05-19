@@ -5,9 +5,10 @@
 }
 
 .Top{
-    font-size: 14px;
-    color: #6a6a6a;
+    font-size: 20px;
+    color: wheat;
     font-family: "楷体";
+    margin-top: 2px;
 
 }
 .wangyiyun{
@@ -23,7 +24,6 @@
     right:14px;
     top:12px;
     position: absolute;
-    color:#99BBE8;
 }
 .jiating{
     font-size: 30px;
@@ -38,7 +38,7 @@
 .rec{
     width: 100%;
     height: 120px;
-    background-image:url("/images/login_bg.jpg");
+    background-image:url("/images/left.jpg");
     font-family: 楷体;
     color:#fb4d00;
     position: relative;

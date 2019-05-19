@@ -23,9 +23,7 @@
 <%@ include file="top.jsp"%>
 <%@ include file="left.jsp"%>
 <div class="all">
-<div class="level">
-    <img src="${pageContext.request.contextPath}/images/house.png">
-</div>
+
 
 <form action="selectDingqi.do" method="post">
 <div class="whole">
@@ -41,7 +39,7 @@
 
 <div class="main">
         <div class="excle">
-            <button type="button" class="btn btn-success btn-block" id="generate-excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i> 将表格转换为Excel</button>
+            <button type="button" class="btn btn-success btn-block" id="generate-excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i> 导出表格信息</button>
         </div>
 
                <span style="color: red; display: block;margin-left:20px; margin-top: 10px; white-space: nowrap;">

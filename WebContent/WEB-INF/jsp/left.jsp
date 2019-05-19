@@ -37,10 +37,10 @@
         <ul class="sidebar-menu">
             <li class="header" style="font-family:楷体">系统管理</li>
                 
-                 <li class="treeview">
+            <li class="treeview">
                 <a href="#" >
                     <i class="fa fa-pie-chart"></i>
-                    <span >用户管理</span>
+                    <span class="fontD" >成员管理</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
@@ -48,11 +48,10 @@
                 </ul>
             </li>
             
-            
-             <li class="treeview">
+            <li class="treeview">
                 <a href="#">
                     <i class="fa fa-pie-chart"></i>
-                    <span>银行卡管理</span>
+                    <span class="fontD">银行卡管理</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
@@ -61,12 +60,11 @@
                    
                 </ul>
             </li>
-            
-            
+
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-pie-chart"></i>
-                    <span>理财产品管理</span>
+                    <span class="fontD">理财产品管理</span>
                     <span class="fa fa-angle-left pull-right"></span>
                 </a>
                 
@@ -77,13 +75,11 @@
 
                 </ul>
             </li>
-            
-            
-            
+
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-files-o"></i>
-                    <span>金银首饰价值管理</span>
+                    <span class="fontD">金银首饰价值管理</span>
                     <span class="fa fa-angle-left pull-right"></span>
                 </a>
                 <ul class="treeview-menu">
@@ -91,10 +87,11 @@
                 </ul>
               
             </li>
+
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-pie-chart"></i>
-                    <span>黄金管理</span>
+                    <span class="fontD">黄金管理</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
@@ -105,7 +102,7 @@
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-pie-chart"></i>
-                    <span>基金管理</span>
+                    <span class="fontD">基金管理</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
@@ -116,7 +113,7 @@
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-pie-chart"></i>
-                    <span>借贷管理</span>
+                    <span class="fontD">借贷管理</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
@@ -128,7 +125,7 @@
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-pie-chart"></i>
-                    <span>保险管理</span>
+                    <span class="fontD">保险管理</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
@@ -139,7 +136,7 @@
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-pie-chart"></i>
-                    <span>房.车贷管理</span>
+                    <span class="fontD">房.车贷管理</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
@@ -148,16 +145,18 @@
 
                 </ul>
             </li>
+
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-pie-chart"></i>
-                    <span>身价总览</span>
+                    <span class="fontD">身价总览</span>
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="Fangdai-management.do" ><i class="fa fa-circle-o"></i>身价总览</a></li>
                 </ul>
             </li>
+
             <li class="treeview">
                 <a href="#">
                 </a>
@@ -165,25 +164,16 @@
                     <li><a href="Jingyin-management.do" ></a></li>
                 </ul>
             </li>
+
             <li class="treeview">
                 <a href="#">
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="Jingyin-management.do" ></a></li>
                 </ul>
-            </li>     <li class="treeview">
-            <a href="#">
-            </a>
-            <ul class="treeview-menu">
-                <li><a href="Jingyin-management.do" ></a></li>
-            </ul>
-        </li>     <li class="treeview">
-            <a href="#">
-            </a>
-            <ul class="treeview-menu">
-                <li><a href="Jingyin-management.do" ></a></li>
-            </ul>
-        </li>     <li class="treeview">
+            </li>
+
+            <li class="treeview">
             <a href="#">
             </a>
             <ul class="treeview-menu">
@@ -191,7 +181,22 @@
             </ul>
         </li>
 
+            <li class="treeview">
+            <a href="#">
+              <ul class="treeview-menu"/>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="Jingyin-management.do" ></a></li>
+            </ul>
+        </li>
 
+            <li class="treeview">
+            <a href="#">
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="Jingyin-management.do" ></a></li>
+            </ul>
+        </li>
 
         </ul>
     </section>

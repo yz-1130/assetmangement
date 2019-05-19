@@ -84,7 +84,7 @@
     </p>
 <tr>
 	<td class="title">到期提醒:&nbsp;&nbsp;&nbsp;</td>
- 	<td class="edit"><input type="text" class="txt" name="daoqi" value="${b2.daoqi}" id="datetimepicker1" autocomplete="off"> </td>
+ 	<td class="edit"><input type="text" class="txt" name="daoqi" value="${b2.daoqi}" autocomplete="off" id="datetimepicker1" > </td>
 </tr>
     </p>
 <tr>

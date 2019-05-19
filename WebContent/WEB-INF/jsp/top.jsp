@@ -15,7 +15,7 @@
 <div class="rec">
     <img src="${pageContext.request.contextPath}/images/house.png" id="middle"><br>
 
-    <h1>家&nbsp;&nbsp;庭&nbsp;&nbsp;资&nbsp;&nbsp;产&nbsp;&nbsp;管&nbsp;&nbsp;理</h1>
+    <h1 style="font-weight: 900">家&nbsp;&nbsp;庭&nbsp;&nbsp;资&nbsp;&nbsp;产&nbsp;&nbsp;管&nbsp;&nbsp;理</h1>
     <div class="Top">欢迎${sessionScope.user.role}:${sessionScope.user.username}</span>来到家庭资产管理系统</div>
     <div class="wangyiyun">
        <%-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=200
@@ -23,7 +23,7 @@
         </iframe>--%>
     </div>
 
-     <div class="loginout"><a href="${pageContext.request.contextPath}/loginout.do" >退出登录</a></div>
+     <div class="loginout"><a href="${pageContext.request.contextPath}/loginout.do" style="color: whitesmoke">退出登录</a></div>
 
     
 </div>

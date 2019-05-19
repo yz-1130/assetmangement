@@ -17,9 +17,7 @@
 <%@ include file="top.jsp"%>
 <%@ include file="left.jsp"%>
 <div class="all">
-<div class="level">
-    <img src="${pageContext.request.contextPath}/images/house.png">
-</div>
+
 <form action="selectHuoqi.do" method="post">
 <div class="whole">
     <div class="littletitle">搜索查询</div>
@@ -33,7 +31,7 @@
 
 <div class="main">
     <div class="excle">
-        <button type="button" class="btn btn-success btn-block" id="generate-excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i> 将表格转换为Excel</button>
+        <button type="button" class="btn btn-success btn-block" id="generate-excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i> 导出表格信息</button>
     </div>
     <table id="test_table" border-color="blue" class="data-table">
         <thead>

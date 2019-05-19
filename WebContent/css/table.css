@@ -3,12 +3,12 @@ html,body{
     padding:0
 }
 .all{
-    width:83%;
+    width:1458px;
     margin-left: 227px;
     margin-top: -522px;
     float: left;
-    background-image: url("../images/mainBack2.jpg") ;
-    background-size: 1555px 1000px;
+    background-image: url("../images/main1.jpg") ;
+    background-size: 1800px 1000px;
 }
 .level{
     background-color: #f4f4f4;
@@ -19,7 +19,7 @@ html,body{
     position: relative;
 }
 .excle{
-    width:1235px;
+    width:120px;
     margin-top: 2px;
     margin-left: 10px;
     margin-right: 20px;

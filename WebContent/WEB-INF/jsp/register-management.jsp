@@ -19,7 +19,6 @@
 <%@ include file="left.jsp"%>
 <div class="all">
 <div class="level">
-    <img src="${pageContext.request.contextPath}/images/house.png">
     <div class="txt">&nbsp;首页&nbsp;&gt;&nbsp;登陆与注册&nbsp;&gt;&nbsp;管理申请</div>
 </div>
 <form action="selectuserByID.do" method="post">
@@ -32,7 +31,7 @@
 
 <div class="main">
     <div class="excle">
-        <button type="button" class="btn btn-success btn-block" id="generate-excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i> 将表格转换为Excel</button>
+        <button type="button" class="btn btn-success btn-block" id="generate-excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i> 导出表格信息</button>
     </div>
     <table id="test_table" border-color="blue" class="data-table">
         <thead>
