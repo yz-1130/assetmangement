@@ -30,17 +30,14 @@
     </style>
     <script src="${pageContext.request.contextPath}/My97DatePicker/WdatePicker.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript">
-		$('#datetimepicker1').datetimepicker({
-			language: 'zh-CN',
-			autoclose: true,
-			format: 'yyyy-mm-dd',
-			weekStart: 1,
-			minView: 'month',
-			todayHighlight: true
+	<script src="/js/laydate/laydate.js"></script>
+
+	<script >
+		laydate.render({
+			elem: '#datetimepicker1' //指定元素
 		});
 	</script>
-	<script src="${pageContext.request.contextPath}/js/layui/lay/modules/laydate.js"></script>
+
   
 </head>
 <body>
@@ -57,49 +54,49 @@
 	<tr>
 		<td class="title">投资机构:&nbsp;&nbsp;&nbsp;</td>
 		<td class="edit">
-			<input type="text" class="txt" name="xinxi" ></td>
+			<input type="text" class="txt" name="xinxi" autocomplete="off"></td>
 	</tr>
 	</p>
 		<tr>
 			<td class="title">银行卡信息:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="xinxi" ></td>
+			<input type="text" class="txt" name="xinxi" autocomplete="off"></td>
 		</tr>
 </p>
 		<tr>
 			<td class="title">银行卡姓名:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="xingming" ></td>
+			<input type="text" class="txt" name="xingming" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">存款金额:&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
-			<input type="text" class="txt" name="jine" ></td>
+			<input type="text" class="txt" name="jine" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">定期时长:&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shichang" ></td>
+			<input type="text" class="txt" name="shichang" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title" >到期日期:&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
-			<input type="text" class="txt" name="daoqi" id="datetimepicker1"></td>
+			<input type="text" class="txt" name="daoqi" id="datetimepicker1" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">备注:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
-			<input type="text" class="txt" name="remark" ></td>
+			<input type="text" class="txt" name="remark" autocomplete="off"></td>
 		</tr>
 	</p>
 	<tr>
 		<td class="title">利率:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 		<td class="edit">
-			<input type="text" class="txt" name="interest" ></td>
+			<input type="text" class="txt" name="interest" autocomplete="off"></td>
 	</tr>
 	</p>
 

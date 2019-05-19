@@ -30,6 +30,12 @@
     </style>
     <script src="${pageContext.request.contextPath}/My97DatePicker/WdatePicker.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/laydate/laydate.js"></script>
+    <script >
+        laydate.render({
+            elem: '#datetimepicker1'//指定元素
+        });
+    </script>
   
 </head>
 <body>
@@ -51,42 +57,42 @@
     </p>
 <tr>
     <td class="title">保险类型:</td>
- 	<td class="edit"><input type="text" class="txt" name="leixing" value="${b2.leixing}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="leixing" value="${b2.leixing}" autocomplete="off"> </td>
 </tr>
     </p>
 <tr>
     <td class="title">被保人:&nbsp;&nbsp;&nbsp;</td>
- 	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" autocomplete="off"> </td>
 </tr>
     </p>
 <tr>
     <td class="title">投保年龄:</td>
- 	<td class="edit"><input type="text" class="txt" name="shijian" value="${b2.shijian}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="shijian" value="${b2.shijian}" autocomplete="off"> </td>
 </tr>
     </p>
 <tr>
 	<td class="title">缴费方式:</td>
- 	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" autocomplete="off"> </td>
 </tr>
     </p>
 <tr>
 	<td class="title">定缴金额:</td>
- 	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" autocomplete="off"> </td>
 </tr>
     </p>
     <tr>
         <td class="title">定缴日期:</td>
-        <td class="edit"><input type="text" class="txt" name="planDate" value="${b2.planDate}" > </td>
+        <td class="edit"><input type="text" class="txt" name="planDate" value="${b2.planDate}" id="datetimepicker1" autocomplete="off"> </td>
     </tr>
     </p>
 <tr>
 	<td class="title">保障年限:</td>
- 	<td class="edit"><input type="text" class="txt" name="shuhuia" value="${b2.shuhuia}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="shuhuia" value="${b2.shuhuia}" autocomplete="off"> </td>
 </tr>
     </p>
 <tr>
 	<td class="title">保障金额:</td>
- 	<td class="edit"><input type="text" class="txt" name="shuhuib" value="${b2.shuhuib}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="shuhuib" value="${b2.shuhuib}" autocomplete="off"> </td>
 </tr>
     </p>
 

@@ -30,6 +30,12 @@
     </style>
     <script src="${pageContext.request.contextPath}/My97DatePicker/WdatePicker.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/laydate/laydate.js"></script>
+    <script >
+        laydate.render({
+            elem: '#datetimepicker1'//指定元素
+        });
+    </script>
   
 </head>
 <body>
@@ -47,28 +53,28 @@
                     <td class="title">&nbsp;编&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     <td class="edit">
                     <input type="text" class="txt"
-	name="id" value="${b2.id}" readonly='true'></td>
+	name="id" value="${b2.id}" readonly='true'autocomplete="off"></td>
 </tr>
     </p>
 <tr>
 	<td class="title">购买日期:</td>
- 	<td class="edit"><input type="text" class="txt" name="leixing" value="${b2.leixing}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="leixing" value="${b2.leixing}" id="datetimepicker1"autocomplete="off"> </td>
 </tr> </p>
 <tr>
 	<td class="title">买入价:&nbsp;&nbsp;&nbsp;</td>
- 	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" autocomplete="off"> </td>
 </tr> </p>
 <tr>
 	<td class="title">卖出价:&nbsp;&nbsp;&nbsp;</td>
- 	<td class="edit"><input type="text" class="txt" name="shijian" value="${b2.shijian}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="shijian" value="${b2.shijian}" autocomplete="off"> </td>
 </tr> </p>
 <tr>
 	<td class="title">购买数额:</td>
- 	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" autocomplete="off"> </td>
 </tr> </p>
 <tr>
 	<td class="title">备注:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
- 	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" autocomplete="off"> </td>
 </tr> 
 </p>
 </table><br>

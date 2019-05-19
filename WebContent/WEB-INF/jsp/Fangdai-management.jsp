@@ -43,6 +43,7 @@
 				<td>购入日期</td>
 				<td>首付金额(￥)</td>
 				<td>每月支付(￥)</td>
+                 <td>缴费日期</td>
 				<td>还款年限</td>
                 <td>操作</td>
 
@@ -56,6 +57,7 @@
 				<td>${b2.jine}</td>
 				<td>${b2.shijian}</td>
 				<td>${b2.shichang}</td>
+                <td>${b2.planDate}</td>
 				<td>${b2.shuhui}</td>
 
                 <td>

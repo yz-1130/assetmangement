@@ -30,6 +30,12 @@
     </style>
     <script src="${pageContext.request.contextPath}/My97DatePicker/WdatePicker.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/laydate/laydate.js"></script>
+    <script >
+        laydate.render({
+            elem: '#datetimepicker1' //指定元素
+        });
+    </script>
   
 </head>
 <body>
@@ -53,43 +59,43 @@
     </p>
     <tr>
         <td class="title">投资机构:&nbsp;&nbsp;&nbsp;</td>
-        <td class="edit"><input type="text" class="txt" name="product" value="${b2.product}" > </td>
+        <td class="edit"><input type="text" class="txt" name="product" value="${b2.product}" autocomplete="off"> </td>
     </tr>
     </p>
 <tr>
 	<td class="title">银行卡信息:</td>
- 	<td class="edit"><input type="text" class="txt" name="xinxi" value="${b2.xinxi}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="xinxi" value="${b2.xinxi}" autocomplete="off"> </td>
 </tr>
     </p>
 <tr>
 	<td class="title">银行卡姓名:</td>
- 	<td class="edit"><input type="text" class="txt" name="xingming" value="${b2.xingming}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="xingming" value="${b2.xingming}" autocomplete="off"> </td>
 </tr>
     </p>
 <tr>
 	<td class="title">存款金额:&nbsp;&nbsp;&nbsp;</td>
- 	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" autocomplete="off"> </td>
 </tr>
     </p>
 <tr>
 	<td class="title">定期时长:&nbsp;&nbsp;&nbsp;</td>
- 	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" autocomplete="off"> </td>
 </tr>
     </p>
 <tr>
 	<td class="title">到期提醒:&nbsp;&nbsp;&nbsp;</td>
- 	<td class="edit"><input type="text" class="txt" name="daoqi" value="${b2.daoqi}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="daoqi" value="${b2.daoqi}" id="datetimepicker1" autocomplete="off"> </td>
 </tr>
     </p>
 <tr>
 	<td class="title">备注:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
- 	<td class="edit"><input type="text" class="txt" name="remark" value="${b2.remark}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="remark" value="${b2.remark}" autocomplete="off"> </td>
 </tr>
     </p>
 
     <tr>
         <td class="title">利率:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="edit"><input type="text" class="txt" name="interest" value="${b2.interest}" > </td>
+        <td class="edit"><input type="text" class="txt" name="interest" value="${b2.interest}" autocomplete="off"> </td>
     </tr>
     </p>
 

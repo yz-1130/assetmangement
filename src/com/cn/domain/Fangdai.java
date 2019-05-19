@@ -9,6 +9,16 @@ public class  Fangdai{
   private String recordDate;
   private Integer userid;
   private String status;
+
+    public String getPlanDate() {
+        return planDate;
+    }
+
+    public void setPlanDate(String planDate) {
+        this.planDate = planDate;
+    }
+
+    private String planDate;
   public  Integer  getId(){
       return id;
    }

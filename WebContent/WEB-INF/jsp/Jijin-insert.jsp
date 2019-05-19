@@ -30,6 +30,12 @@
     </style>
     <script src="${pageContext.request.contextPath}/My97DatePicker/WdatePicker.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
+	<script src="/js/laydate/laydate.js"></script>
+	<script >
+		laydate.render({
+			elem: '#datetimepicker1'//指定元素
+		});
+	</script>
   
 </head>
 <body>
@@ -51,20 +57,20 @@
 		<tr>
 			<td class="title">定投金额:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="jine" ></td>
+			<input type="text" class="txt" name="jine" autocomplete="off"></td>
 		</tr>
 	<p>
 	<div class="clearfix"></div>
 		<tr>
 			<td class="title">定投间隔:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shijian" ></td>
+			<input type="text" class="txt" name="shijian" autocomplete="off"></td>
 		</tr>
 	<p>
 		<tr>
 			<td class="title">定缴日期:</td>
 			<td class="edit">
-				<input type="text" class="txt" name="planDate" ></td>
+				<input type="text" class="txt" name="planDate" id="datetimepicker1"autocomplete="off"></td>
 		</tr>
 	</p>
 	<div class="clearfix"></div>

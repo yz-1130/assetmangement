@@ -29,6 +29,17 @@
     </style>
     <script src="${pageContext.request.contextPath}/My97DatePicker/WdatePicker.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
+	<script src="/js/laydate/laydate.js"></script>
+	<script >
+		laydate.render({
+			elem: '#datetimepicker1'//指定元素
+		});
+	</script>
+	<script >
+		laydate.render({
+			elem: '#datetimepicker2'//指定元素
+		});
+	</script>
   
 </head>
 <body>
@@ -44,31 +55,37 @@
 		<tr>
 			<td class="title">贷款类型:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="leixing" ></td>
+			<input type="text" class="txt" name="leixing" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">购入日期:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="jine" ></td>
+			<input type="text" class="txt" name="jine" id="datetimepicker1"autocomplete="off"></td>
 		</tr>
 </p>
 		<tr>
 			<td class="title">首付金额:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shijian" ></td>
+			<input type="text" class="txt" name="shijian" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">每月支付:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shichang" ></td>
+			<input type="text" class="txt" name="shichang" autocomplete="off"></td>
+		</tr>
+	</p>
+		<tr>
+			<td class="title">缴费日期:</td>
+			<td class="edit">
+			<input type="text" class="txt" name="planDate" id="datetimepicker2"autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">还款年限:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shuhui" ></td>
+			<input type="text" class="txt" name="shuhui" autocomplete="off"></td>
 		</tr>
 	</p>
 

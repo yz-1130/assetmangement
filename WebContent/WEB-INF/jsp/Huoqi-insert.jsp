@@ -44,25 +44,25 @@
 	<tr>
 		<td class="title">投资机构:</td>
 		<td class="edit">
-			<input type="text" class="txt" name="xinxi" ></td>
+			<input type="text" class="txt" name="xinxi" autocomplete="off"></td>
 	</tr>
 	</p>
 		<tr>
 			<td class="title">银行卡信息:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="xinxi" ></td>
+			<input type="text" class="txt" name="xinxi" autocomplete="off"></td>
 		</tr>
 </p>
 		<tr>
 			<td class="title">银行卡姓名:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="xingming" ></td>
+			<input type="text" class="txt" name="xingming" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">存款金额:&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
-			<input type="text" class="txt" name="jine" ></td>
+			<input type="text" class="txt" name="jine" autocomplete="off"></td>
 		</tr>
 	</p>
 

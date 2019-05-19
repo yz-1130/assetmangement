@@ -29,6 +29,12 @@
     </style>
     <script src="${pageContext.request.contextPath}/My97DatePicker/WdatePicker.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
+	<script src="/js/laydate/laydate.js"></script>
+	<script >
+		laydate.render({
+			elem: '#datetimepicker1'//指定元素
+		});
+	</script>
   
 </head>
 <body>
@@ -44,31 +50,31 @@
 		<tr>
 			<td class="title">购买日期:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="leixing" ></td>
+			<input type="text" class="txt" name="leixing" id="datetimepicker1"autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">买入价:&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
-			<input type="text" class="txt" name="jine" ></td>
+			<input type="text" class="txt" name="jine" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">卖出价:&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shijian" ></td>
+			<input type="text" class="txt" name="shijian" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">购买数额:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shichang" ></td>
+			<input type="text" class="txt" name="shichang" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">备注:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shuhui" ></td>
+			<input type="text" class="txt" name="shuhui" autocomplete="off"></td>
 		</tr>
 	</p>
 

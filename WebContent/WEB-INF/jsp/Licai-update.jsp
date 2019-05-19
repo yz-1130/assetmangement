@@ -30,6 +30,17 @@
     </style>
     <script src="${pageContext.request.contextPath}/My97DatePicker/WdatePicker.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/laydate/laydate.js"></script>
+    <script >
+        laydate.render({
+            elem: '#datetimepicker1'//指定元素
+        });
+    </script>
+    <script >
+        laydate.render({
+            elem: '#datetimepicker2'//指定元素
+        });
+    </script>
   
 </head>
 <body>
@@ -51,31 +62,31 @@
 </tr></p>
 <tr>
 	<td class="title">产品类型:</td>
- 	<td class="edit"><input type="text" class="txt" name="leixing" value="${b2.leixing}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="leixing" value="${b2.leixing}" autocomplete="off"> </td>
 </tr> </p>
 <tr>
 	<td class="title">购买金额:</td>
- 	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" autocomplete="off"> </td>
 </tr> </p>
 <tr>
 	<td class="title">购买时间:</td>
- 	<td class="edit"><input type="text" class="txt" name="shijian" value="${b2.shijian}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="shijian" value="${b2.shijian}" id="datetimepicker1"autocomplete="off"> </td>
 </tr> </p>
 <tr>
 	<td class="title">购买费率:</td>
- 	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" autocomplete="off"> </td>
 </tr> </p>
 <tr>
 	<td class="title">赎回时间:</td>
- 	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" id="datetimepicker2"autocomplete="off"> </td>
 </tr> </p>
 <tr>
 	<td class="title">预期收益:</td>
- 	<td class="edit"><input type="text" class="txt" name="yuqi" value="${b2.yuqi}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="yuqi" value="${b2.yuqi}" autocomplete="off"> </td>
 </tr> </p>
 <tr>
 	<td class="title">备注:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
- 	<td class="edit"><input type="text" class="txt" name="remark" value="${b2.remark}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="remark" value="${b2.remark}" autocomplete="off"> </td>
 </tr> </p>
 
 </table><br></p>

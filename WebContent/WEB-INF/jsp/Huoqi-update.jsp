@@ -55,15 +55,15 @@
     </tr> </p>
 <tr>
 	<td class="title">银行卡信息:</td>
- 	<td class="edit"><input type="text" class="txt" name="xinxi" value="${b2.xinxi}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="xinxi" value="${b2.xinxi}" autocomplete="off"> </td>
 </tr> </p>
 <tr>
 	<td class="title">银行卡姓名:</td>
- 	<td class="edit"><input type="text" class="txt" name="xingming" value="${b2.xingming}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="xingming" value="${b2.xingming}" autocomplete="off"> </td>
 </tr> </p>
 <tr>
 	<td class="title">存款金额:&nbsp;&nbsp;&nbsp;</td>
- 	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" > </td>
+ 	<td class="edit"><input type="text" class="txt" name="jine" value="${b2.jine}" autocomplete="off"> </td>
 </tr>
     </p>
 </table><br>

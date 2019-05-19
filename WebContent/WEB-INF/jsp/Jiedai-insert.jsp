@@ -29,6 +29,17 @@
     </style>
     <script src="${pageContext.request.contextPath}/My97DatePicker/WdatePicker.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
+	<script src="/js/laydate/laydate.js"></script>
+	<script >
+		laydate.render({
+			elem: '#datetimepicker1'//指定元素
+		});
+	</script>
+	<script >
+		laydate.render({
+			elem: '#datetimepicker2'//指定元素
+		});
+	</script>
   
 </head>
 <body>
@@ -56,13 +67,13 @@
 		<tr>
 			<td class="title">借贷日期:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shijian" ></td>
+			<input type="text" class="txt" name="shijian" id="datetimepicker1"autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">还款日期:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shichang" ></td>
+			<input type="text" class="txt" name="shichang" id="datetimepicker2"autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>

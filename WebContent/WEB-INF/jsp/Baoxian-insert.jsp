@@ -29,6 +29,12 @@
     </style>
     <script src="${pageContext.request.contextPath}/My97DatePicker/WdatePicker.js"></script>
     <script src="${pageContext.request.contextPath}/js/jquery-2.1.1.min.js"></script>
+	<script src="/js/laydate/laydate.js"></script>
+	<script >
+		laydate.render({
+			elem: '#datetimepicker1'//指定元素
+		});
+	</script>
   
 </head>
 <body>
@@ -44,49 +50,49 @@
 		<tr>
 			<td class="title">保险类型:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="leixing" ></td>
+			<input type="text" class="txt" name="leixing" autocomplete="off"></td>
 		</tr>
 		</p>
 		<tr>
 			<td class="title">被保人:&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
-			<input type="text" class="txt" name="jine" ></td>
+			<input type="text" class="txt" name="jine" autocomplete="off"></td>
 		</tr>
 	    </p>
 		<tr>
 			<td class="title">投保年龄:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shijian" ></td>
+			<input type="text" class="txt" name="shijian" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">缴费方式:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shichang" ></td>
+			<input type="text" class="txt" name="shichang" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">定缴金额:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shuhui" ></td>
+			<input type="text" class="txt" name="shuhui" autocomplete="off"></td>
 		</tr>
 	</p>
 	<tr>
 		<td class="title">定缴日期:</td>
 		<td class="edit">
-			<input type="text" class="txt" name="planDate" ></td>
+			<input type="text" class="txt" name="planDate" id="datetimepicker1"autocomplete="off"></td>
 	</tr>
 	</p>
 		<tr>
 			<td class="title">保障年限:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shuhuia" ></td>
+			<input type="text" class="txt" name="shuhuia" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>
 			<td class="title">保障金额:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shuhuib" ></td>
+			<input type="text" class="txt" name="shuhuib" autocomplete="off"></td>
 		</tr>
 	</p>
 

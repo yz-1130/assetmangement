@@ -34,12 +34,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<if test="status!='' and status!=null">
             and    status=#{status}
 		</if>
+			<if test="planDate!='' and planDate!=null">
+				and    planDate=#{planDate}
+			</if>
 		</where>
 	</select>
 
 <!-- add new record -->
  	<insert id="insertFangdai" parameterType="com.cn.domain.Fangdai">
-  		insert into Fangdai (leixing,jine,shijian,shichang,shuhui,recordDate,userid,status) values ("${leixing}","${jine}","${shijian}","${shichang}","${shuhui}","${recordDate}","${userid}","${status}")
+  		insert into Fangdai (leixing,jine,shijian,shichang,shuhui,recordDate,userid,status,planDate) values ("${leixing}","${jine}","${shijian}","${shichang}","${shuhui}","${recordDate}","${userid}","${status}","${planDate}")
  	</insert>
 
 <!-- update -->
@@ -55,6 +58,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			<if test="recordDate!='' and recordDate!= null">recordDate=#{recordDate},</if>
 			<if test="userid!='' and userid!= null">userid=#{userid},</if>
 			<if test="status!='' and status!= null">status=#{status},</if>
+			<if test="planDate!='' and planDate!= null">planDate=#{planDate},</if>
+
 
 		</trim>
 		where id=#{id} 
