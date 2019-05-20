@@ -17,6 +17,13 @@
     <script type="text/javascript">
         var  SUM = 0;
     </script>
+    <script type="text/javascript">
+        function add() {
+            debugger
+            window.location.href="/Dingqi-insert.do";
+
+        }
+    </script>
 </head>
 
 <body>
@@ -32,9 +39,9 @@
 编号:<input type="text" placeholder="按编号查询" name="id" class="text">&nbsp;&nbsp;
 卡号信息:<input type="text" placeholder="按银行卡信息查询" name="xinxi" class="text">&nbsp;&nbsp;
   <img src="${pageContext.request.contextPath}/images/query.jpg" class="img1">&nbsp;<input type="submit" value="查询" class="button">&nbsp;&nbsp;
-  <img src="${pageContext.request.contextPath}/images/add.png" class="img2">&nbsp;<a href="Dingqi-insert.do">新增</a>&nbsp;&nbsp;
+    <input type="button" value="新增" onclick="add()" class="button">&nbsp;&nbsp;
 
-<img src="${pageContext.request.contextPath}/images/reset.png" class="img3">&nbsp;<input type="reset" value="重置" class="button">   
+<img src="${pageContext.request.contextPath}/images/reset.png" class="img3">&nbsp;<input type="reset" value="重置" class="button">
 </div>
 
 <div class="main">

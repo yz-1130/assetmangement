@@ -4,7 +4,7 @@ html,body{
 }
 .all{
     width:1458px;
-    margin-left: 227px;
+    margin-left: 234px;
     margin-top: -522px;
     float: left;
     background-image: url("../images/main1.jpg") ;
@@ -63,7 +63,7 @@ html,body{
     line-height: 30px;
     border: solid 1px #a1a1a1;
     text-align: right;
-    width: 60px;
+    width: 43px;
     position: relative;
     padding-right: 5px;
 }
@@ -79,24 +79,24 @@ html,body{
     color: black;
 }
 .whole .img1{
-    width: 20px;
-    height: 20px;
+    width: 0px;
+    height: 0px;
     position: absolute;
     top: 210px;
     left: 740px;
     z-index:1;
 }
 .whole .img2{
-    width: 18px;
-    height: 18px;
+    width: 0px;
+    height: 0px;
     position: absolute;
     top:211px;
-    left: 817px;
+    left: 117px;
     z-index:1;
 }
 .whole .img3{
-    width: 20px;
-    height: 20px;
+    width: 0px;
+    height: 0px;
     position: absolute;
     top: 209px;
     left: 895px;

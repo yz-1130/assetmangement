@@ -13,6 +13,13 @@
     <script type="text/javascript" src="../../js/table/FileSaver.js"></script>
     <script type="text/javascript" src="../../js/table/excel-gen.js"></script>
     <script type="text/javascript" src="../../js/table/demo.page.js"></script>
+    <script type="text/javascript">
+        function add() {
+            debugger
+            window.location.href="/Dingqi-insert.do";
+
+        }
+    </script>
 </head>
 <body>
 <%@ include file="top.jsp"%>

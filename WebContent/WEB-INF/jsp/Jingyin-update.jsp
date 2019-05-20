@@ -48,7 +48,7 @@
 
 <div class="content">
    <c:forEach items="${result}" var="b2">
-<form action="updateJingyin.do?id=${b2.id}" method="post">
+<form action="updateJingyin.do?id=${b2.id}" method="post" id="form">
 <tr>
                     <td class="title">&nbsp;编&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     <td class="edit">

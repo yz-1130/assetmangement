@@ -12,6 +12,13 @@
     <script type="text/javascript" src="../../js/table/FileSaver.js"></script>
     <script type="text/javascript" src="../../js/table/excel-gen.js"></script>
     <script type="text/javascript" src="../../js/table/demo.page.js"></script>
+    <script type="text/javascript">
+        function add() {
+            debugger
+            window.location.href="/Dingqi-insert.do";
+
+        }
+    </script>
 </head>
 <body>
 <%@ include file="top.jsp"%>
@@ -24,8 +31,7 @@
 编号:<input type="text" placeholder="按编号查询" name="id" class="text">&nbsp;&nbsp;
 购买类型:<input type="text" placeholder="按购买类型查询" name="leixing" class="text">&nbsp;&nbsp;
   <img src="${pageContext.request.contextPath}/images/query.jpg" class="img1">&nbsp;<input type="submit" value="查询" class="button">&nbsp;&nbsp;
-  <img src="${pageContext.request.contextPath}/images/add.png" class="img2">&nbsp;<a href="Jingyin-insert.do">新增</a>&nbsp;&nbsp;
-
+    <input type="button" value="新增" onclick="add()" class="button">&nbsp;&nbsp;
 <img src="${pageContext.request.contextPath}/images/reset.png" class="img3">&nbsp;<input type="reset" value="重置" class="button">   
 </div>
 
