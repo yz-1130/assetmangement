@@ -47,7 +47,7 @@
 				<td>购买金额(￥)</td>
 				<td>购买时间</td>
 				<td>购买费率</td>
-				<td>赎回时间</td>
+				<td>购买时长(年)</td>
 				<td>预期收益(￥)</td>
 				<td>备注</td>
 			    <td>操作</td>
@@ -63,7 +63,7 @@
 				<td>${b2.shijian}</td>
 				<td>${b2.shichang}</td>
 				<td>${b2.shuhui}</td>
-				<td>${b2.yuqi}</td>
+				<td>${b2.jine*(b2.shichang+1)*b2.shuhui}</td>
 				<td>${b2.remark}</td>
 
 <td>

@@ -78,9 +78,9 @@
 		</tr>
 	</p>
 		<tr>
-			<td class="title">赎回时间:</td>
+			<td class="title">购买时长:</td>
 			<td class="edit">
-			<input type="text" class="txt" name="shuhui" id="datetimepicker2"autocomplete="off"></td>
+			<input type="text" class="txt" name="shuhui" autocomplete="off"></td>
 		</tr>
 	</p>
 		<tr>

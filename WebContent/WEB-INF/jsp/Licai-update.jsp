@@ -77,8 +77,8 @@
  	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" autocomplete="off"> </td>
 </tr> </p>
 <tr>
-	<td class="title">赎回时间:</td>
- 	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" id="datetimepicker2"autocomplete="off"> </td>
+	<td class="title">购买时长:</td>
+ 	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" autocomplete="off"> </td>
 </tr> </p>
 <tr>
 	<td class="title">预期收益:</td>

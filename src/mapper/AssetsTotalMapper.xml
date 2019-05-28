@@ -44,7 +44,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <!-- add new record -->
  	<insert id="insertAssetsTotal" parameterType="com.cn.domain.AssetsTotal">
-  		insert into AssetsTotal (bankMoney,jijinMoney,jingyinMoney,daiMoney,licaiMoney,baoMoney,otherMoney,houseMoney,userid) values ("${bankMoney}","${jijinMoney}","${jingyinMoney}","${daiMoney}","${licaiMoney}","${baoMoney}","${otherMoney}","${houseMoney}","${userid}"")
+  		insert into AssetsTotal (bankMoney,jijinMoney,jingyinMoney,daiMoney,licaiMoney,baoMoney,otherMoney,houseMoney,userid) values ("${bankMoney}","${jijinMoney}","${jingyinMoney}","${daiMoney}","${licaiMoney}","${baoMoney}","${otherMoney}","${houseMoney}","${userid}")
  	</insert>
 
 <!-- update -->

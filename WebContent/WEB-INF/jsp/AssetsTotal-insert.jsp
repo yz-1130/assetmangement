@@ -80,7 +80,7 @@
 	<tr>
 		<td class="title">保险总额:</td>
 		<td class="edit">
-			<input type="text" class="txt" name="baoMoney" id="datetimepicker1"autocomplete="off"></td>
+			<input type="text" class="txt" name="baoMoney" autocomplete="off"></td>
 	</tr>
 	</p>
 		<tr>
