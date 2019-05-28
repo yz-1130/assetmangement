@@ -15,7 +15,7 @@
 	<script type="text/javascript">
 		function add() {
 			debugger
-			window.location.href="/Baoxian-insert.do";
+			window.location.href="/AssetsTotal-insert.do";
 
 		}
 	</script>
@@ -27,11 +27,11 @@
 <%--<div class="level">--%>
     <%--<img src="${pageContext.request.contextPath}/images/house.png">--%>
 <%--</div>--%>
-<form action="selectBaoxian.do" method="post">
+<form action="selectAssetsTotal.do" method="post">
 <div class="whole">
     <div class="littletitle">搜索查询</div>
 编号:<input type="text" placeholder="按编号查询" name="id" class="text">&nbsp;&nbsp;
-保险类型:<input type="text" placeholder="按保险类型查询" name="leixing" class="text">&nbsp;&nbsp;
+保险类型:<input type="text" placeholder="按类型查询" name="leixing" class="text">&nbsp;&nbsp;
   <img src="${pageContext.request.contextPath}/images/query.jpg" class="img1">&nbsp;<input type="submit" value="查询" class="button">&nbsp;&nbsp;
 	<input type="button" value="新增" onclick="add()" class="button">&nbsp;&nbsp;
 <img src="${pageContext.request.contextPath}/images/reset.png" class="img3">&nbsp;<input type="reset" value="重置" class="button">   
@@ -44,16 +44,15 @@
     <table id="test_table " border-color="blue" class="data-table">
         <thead>
         <tr class="head">
-				<td>编号</td>
-				<td>保险类型</td>
-				<td>被保人</td>
-				<td>投保年龄</td>
-				<td>缴费方式</td>
-				<td>定缴金额(￥)</td>
-			<td>定缴日期</td>
-
-			<td>保障年限</td>
-				<td>保障金额(￥)</td>
+				<td>编号(￥)</td>
+				<td>银行总存款(￥)</td>
+				<td>基金拥有总额(￥)</td>
+				<td>金银首饰总额(￥)</td>
+				<td>借贷总额(￥)</td>
+				<td>理财总额(￥)</td>
+				<td>保险总额(￥)</td>
+				<td>房车总额(￥)</td>
+				<td>其它总额(￥)</td>
 			    <td>操作</td>
 
   </tr>
@@ -62,18 +61,19 @@
         <c:forEach items="${result}" var="b2">
 			<tr>
 				<td>${b2.id}</td>
-				<td>${b2.leixing}</td>
-				<td>${b2.jine}</td>
-				<td>${b2.shijian}</td>
-				<td>${b2.shichang}</td>
-				<td>${b2.shuhui}</td>
-				<td>${b2.planDate}</td>
-				<td>${b2.shuhuia}</td>
-				<td>${b2.shuhuib}</td>
+				<td>${b2.bankMoney}</td>
+				<td>${b2.jijinMoney}</td>
+				<td>${b2.jingyinMoney}</td>
+				<td>${b2.daiMoney}</td>
+				<td>${b2.licaiMoney}</td>
+				<td>${b2.baoMoney}</td>
+				<td>${b2.houseMoney}</td>
+				<td>${b2.otherMoney}</td>
+
 
 				<td>
-				<a href="${pageContext.request.contextPath}/gotoUpdateBaoxian.do?id=${b2.id}" >修改</a>&nbsp;
-				<a href="${pageContext.request.contextPath}/deleteBaoxian.do?id=${b2.id}" >删除</a>
+				<a href="${pageContext.request.contextPath}/gotoUpdateAssetsTotal.do?id=${b2.id}" >修改</a>&nbsp;
+				<a href="${pageContext.request.contextPath}/deleteAssetsTotal.do?id=${b2.id}" >删除</a>
 				</td>
 			</tr>
 		</c:forEach>

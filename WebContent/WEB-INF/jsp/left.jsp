@@ -153,7 +153,7 @@
                     <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="Fangdai-management.do" style="color: wheat"><i class="fa fa-circle-o"></i>身价总览</a></li>
+                    <li><a href="AssetsTotal-management.do" style="color: wheat"><i class="fa fa-circle-o"></i>身价总览</a></li>
                 </ul>
             </li>
 

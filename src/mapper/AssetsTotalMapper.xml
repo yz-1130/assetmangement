@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="/">
+<!-- 查询 -->
+	<select id="selectAssetsTotal" parameterType="com.cn.domain.AssetsTotal" resultType="com.cn.domain.AssetsTotal">
+		select * from AssetsTotal
+		<where>
+		<if test="id!='' and id!=null">
+                id=#{id}
+		</if>
+		<if test="bankMoney!='' and bankMoney!=null">
+            and    bankMoney=#{bankMoney}
+		</if>
+		<if test="jijinMoney!='' and jijinMoney!=null">
+            and    jijinMoney=#{jijinMoney}
+		</if>
+		<if test="jingyinMoney!='' and jingyinMoney!=null">
+            and    jingyinMoney=#{jingyinMoney}
+		</if>
+		<if test="daiMoney!='' and daiMoney!=null">
+            and    daiMoney=#{daiMoney}
+		</if>
+		<if test="licaiMoney!='' and licaiMoney!=null">
+            and    licaiMoney=#{licaiMoney}
+		</if>
+		<if test="baoMoney!='' and baoMoney!=null">
+            and    baoMoney=#{baoMoney}
+		</if>
+		<if test="otherMoney!='' and otherMoney!=null">
+            and    otherMoney=#{otherMoney}
+		</if>
+		<if test="houseMoney!='' and houseMoney!=null">
+            and    houseMoney=#{houseMoney}
+		</if>
+		<if test="userid!='' and userid!=null">
+            and    userid=#{userid}
+		</if>
+
+
+		</where>
+	</select>
+
+<!-- add new record -->
+ 	<insert id="insertAssetsTotal" parameterType="com.cn.domain.AssetsTotal">
+  		insert into AssetsTotal (bankMoney,jijinMoney,jingyinMoney,daiMoney,licaiMoney,baoMoney,otherMoney,houseMoney,userid) values ("${bankMoney}","${jijinMoney}","${jingyinMoney}","${daiMoney}","${licaiMoney}","${baoMoney}","${otherMoney}","${houseMoney}","${userid}"")
+ 	</insert>
+
+<!-- update -->
+	<update id="updateAssetsTotal" parameterType="com.cn.domain.AssetsTotal">
+		update AssetsTotal
+		<trim prefix="set" suffixOverrides=","> 
+			<if test="id!='' and id!= null">id=#{id},</if>
+			<if test="bankMoney!='' and bankMoney!= null">bankMoney=#{bankMoney},</if>
+			<if test="jijinMoney!='' and jijinMoney!= null">jijinMoney=#{jijinMoney},</if>
+			<if test="jingyinMoney!='' and jingyinMoney!= null">jingyinMoney=#{jingyinMoney},</if>
+			<if test="daiMoney!='' and daiMoney!= null">daiMoney=#{daiMoney},</if>
+			<if test="licaiMoney!='' and licaiMoney!= null">licaiMoney=#{licaiMoney},</if>
+			<if test="baoMoney!='' and baoMoney!= null">baoMoney=#{baoMoney},</if>
+			<if test="otherMoney!='' and otherMoney!= null">otherMoney=#{otherMoney},</if>
+			<if test="houseMoney!='' and houseMoney!= null">houseMoney=#{houseMoney},</if>
+			<if test="userid!='' and userid!= null">userid=#{userid},</if>
+
+
+		</trim>
+		where id=#{id} 
+	</update>
+
+<!-- delete-->
+	<delete id="deleteAssetsTotal" parameterType="com.cn.domain.AssetsTotal">
+		delete from AssetsTotal where id=#{id}
+	</delete>
+</mapper>
