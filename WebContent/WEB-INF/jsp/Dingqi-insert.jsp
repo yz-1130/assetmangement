@@ -70,7 +70,7 @@
 		</tr>
 	</p>
 		<tr>
-			<td class="title">存款金额:&nbsp;&nbsp;&nbsp;</td>
+			<td class="title">定期金额:&nbsp;&nbsp;&nbsp;</td>
 			<td class="edit">
 			<input type="text" class="txt" name="jine" autocomplete="off"></td>
 		</tr>

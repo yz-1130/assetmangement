@@ -50,7 +50,7 @@
         </div>
 
                <span style="color: red; display: block;margin-left:20px; margin-top: 10px; white-space: nowrap;">
-                   银行活期总额： <span> ${totalAssetsAmount}</span> 元</span>
+                   银行活期总额： <span> ${money.money}</span> 元</span>
 
 
     <table id="test_table" border-color="blue" class="data-table">
@@ -60,7 +60,7 @@
                 <td>投资机构</td>
 				<td>银行卡信息</td>
 				<td>银行卡姓名</td>
-				<td>存款金额(￥)</td>
+				<td>定期金额(￥)</td>
 				<td>定期时长(年)</td>
 				<td>到期日期及提醒</td>
                 <td>利率%</td>
@@ -89,7 +89,7 @@
 				<td>${b2.shichang}</td>
                 <td>${b2.daoqi}</td>
                 <td><fmt:formatNumber value="${b2.interest}" type="currency" pattern="#,##0.00"/></td>
-                <td><fmt:formatNumber value="${(b2.interest+1)*b2.jine*b2.shichang}" type="currency" pattern="#,##0.00"/></td>
+                <td><fmt:formatNumber value="${b2.jine+(b2.interest+1)*b2.jine*b2.shichang}" type="currency" pattern="#,##0.00"/></td>
 				<td>${b2.remark}</td>
 <td>
 <a href="${pageContext.request.contextPath}/gotoUpdateDingqi.do?id=${b2.id}" >修改</a>&nbsp;

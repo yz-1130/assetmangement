@@ -15,7 +15,7 @@
     <script type="text/javascript">
         function add() {
             debugger
-            window.location.href="/Dingqi-insert.do";
+            window.location.href="/Huoqi-insert.do";
 
         }
     </script>
@@ -46,7 +46,7 @@
                 <td>投资机构</td>
 				<td>银行卡信息</td>
 				<td>银行卡姓名</td>
-				<td>存款金额(￥)</td>
+				<td>活期金额(￥)</td>
                 <td>操作</td>
 
   </tr>

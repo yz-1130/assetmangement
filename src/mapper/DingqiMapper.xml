@@ -85,47 +85,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<select id="selectTotalMoney" parameterType="com.cn.domain.Dingqi" resultType="com.cn.domain.Dingqi">
 		select sum(totalMoney)from Dingqi
-		<where>
-			<if test="id!='' and id!=null">
-				id=#{id}
-			</if>
-			<if test="xinxi!='' and xinxi!=null">
-				and    xinxi=#{xinxi}
-			</if>
-			<if test="xingming!='' and xingming!=null">
-				and    xingming=#{xingming}
-			</if>
-			<if test="jine!='' and jine!=null">
-				and    jine=#{jine}
-			</if>
-			<if test="shichang!='' and shichang!=null">
-				and    shichang=#{shichang}
-			</if>
-			<if test="daoqi!='' and daoqi!=null">
-				and    daoqi=#{daoqi}
-			</if>
-			<if test="remark!='' and remark!=null">
-				and    remark=#{remark}
-			</if>
-			<if test="recordDate!='' and recordDate!=null">
-				and    recordDate=#{recordDate}
-			</if>
-			<if test="userid!='' and userid!=null">
-				and    userid=#{userid}
-			</if>
-			<if test="status!='' and status!=null">
-				and    status=#{status}
-			</if>
-			<if test="interest!='' and interest!=null">
-				interest=#{interest}
-			</if>
-			<if test="totalMoney!='' and totalMoney!=null">
-				totalMoney=#{totalMoney}
-			</if>
-			<if test="product!='' and product!=null">
-				product=#{product}
-			</if>
-
-		</where>
+		where userid=#{id}
 	</select>
 </mapper>
