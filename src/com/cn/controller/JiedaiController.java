@@ -3,6 +3,7 @@ package com.cn.controller;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,6 +26,14 @@ import com.cn.service.JiedaiDao;
 			jiedai.setUserid(user.getId());
 		}
 		List<Jiedai> qlist=jiedaiDao.selectJiedai(jiedai);
+		int sum = 0;
+		for (Jiedai jiedai1 : qlist) {
+			int jine;
+			jine = jiedai1.getJine();
+			sum += jine;
+		}
+		int totalAssetsAmount = sum;
+		model.addAttribute("totalAssetsAmount", totalAssetsAmount);
 		model.addAttribute("result", qlist);
 		return "Jiedai-management";
 }

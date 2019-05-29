@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.cn.domain.User;
 import com.cn.domain.Dingqi;
 import com.cn.service.DingqiDao;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 	public class DingqiController {
@@ -27,9 +26,15 @@ import org.springframework.web.servlet.ModelAndView;
 		if(!"管理员".equalsIgnoreCase(user.getRole())){
 			dingqi.setUserid(user.getId());
 		}
-	     List<Dingqi>  totalAssetsAmount =dingqiDao.selectTotalMoney(dingqi);
-		model.addAttribute("totalAssetsAmount", totalAssetsAmount);
+
 		List<Dingqi> qlist=dingqiDao.selectDingqi(dingqi);
+		int sum = 0;
+		for (Dingqi dingqi1 : qlist) {
+			int jine = dingqi1.getJine();
+			sum += jine;
+		}
+		Integer totalAssetsAmount = sum;
+		model.addAttribute("totalAssetsAmount", totalAssetsAmount);
 		model.addAttribute("result", qlist);
 
 		return "Dingqi-management";

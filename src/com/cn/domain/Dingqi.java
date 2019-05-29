@@ -6,7 +6,7 @@ public class  Dingqi{
   private Integer id;
   private String xinxi;
   private String xingming;
-  private String jine;
+  private int jine;
   private String shichang;
   private String daoqi;
   private String remark;
@@ -58,10 +58,10 @@ public class  Dingqi{
   public void setXingming(String xingming){
       this.xingming=xingming;
 	 }
-  public  String  getJine(){
+  public int getJine(){
       return jine;
    }
-  public void setJine(String jine){
+  public void setJine(int jine){
       this.jine=jine;
 	 }
   public  String  getShichang(){

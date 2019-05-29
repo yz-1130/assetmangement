@@ -42,9 +42,9 @@
 <div class="content">
 <form action="insertHuoqi.do" method="post" id="form">
 	<tr>
-		<td class="title">投资机构:</td>
+		<td class="title">投资机构:&nbsp;&nbsp;&nbsp;</td>
 		<td class="edit">
-			<input type="text" class="txt" name="xinxi" autocomplete="off"></td>
+			<input type="text" class="txt" name="product" autocomplete="off"></td>
 	</tr>
 	</p>
 		<tr>

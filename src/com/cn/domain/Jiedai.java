@@ -2,7 +2,7 @@ package com.cn.domain;
 public class  Jiedai{
   private Integer id;
   private String leixing;
-  private String jine;
+  private int jine;
   private String shijian;
   private String shichang;
   private String shuhui;
@@ -21,10 +21,10 @@ public class  Jiedai{
   public void setLeixing(String leixing){
       this.leixing=leixing;
 	 }
-  public  String  getJine(){
+  public int getJine(){
       return jine;
    }
-  public void setJine(String jine){
+  public void setJine(int jine){
       this.jine=jine;
 	 }
   public  String  getShijian(){

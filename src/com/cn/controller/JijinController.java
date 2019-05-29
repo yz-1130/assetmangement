@@ -3,6 +3,7 @@ package com.cn.controller;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,6 +26,14 @@ import com.cn.service.JijinDao;
 			jijin.setUserid(user.getId());
 		}
 		List<Jijin> qlist=jijinDao.selectJijin(jijin);
+		int sum = 0;
+		for (Jijin jijin1 : qlist) {
+			int jine;
+			jine = jijin1.getJine();
+			sum += jine;
+		}
+		int totalAssetsAmount = sum;
+		model.addAttribute("totalAssetsAmount", totalAssetsAmount);
 		model.addAttribute("result", qlist);
 		return "Jijin-management";
 }

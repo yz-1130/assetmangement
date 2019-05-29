@@ -39,6 +39,8 @@
     <div class="excle">
         <button type="button" class="btn btn-success btn-block" id="generate-excel"><i class="fa fa-file-excel-o" aria-hidden="true"></i> 导出表格信息</button>
     </div>
+    <span style="color: red; display: block;margin-left:20px; margin-top: 10px; white-space: nowrap;">
+                   基金初始购买总额： <span> ${totalAssetsAmount}</span> 元</span>
     <table id="test_table" border-color="blue" class="data-table">
         <thead>
         <tr class="head">

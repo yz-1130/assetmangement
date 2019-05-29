@@ -2,7 +2,7 @@ package com.cn.domain;
 public class  Jijin{
   private Integer id;
   private String leixing;
-  private String jine;
+  private int jine;
   private String shijian;
   private String shuhui;
   private String recordDate;
@@ -29,10 +29,10 @@ public class  Jijin{
   public void setLeixing(String leixing){
       this.leixing=leixing;
 	 }
-  public  String  getJine(){
+  public int getJine(){
       return jine;
    }
-  public void setJine(String jine){
+  public void setJine(int jine){
       this.jine=jine;
 	 }
   public  String  getShijian(){

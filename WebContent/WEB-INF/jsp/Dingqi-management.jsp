@@ -50,7 +50,7 @@
         </div>
 
                <span style="color: red; display: block;margin-left:20px; margin-top: 10px; white-space: nowrap;">
-                   银行活期总额： <span> ${money.money}</span> 元</span>
+                   银行定期存款总额： <span> ${totalAssetsAmount}</span> 元</span>
 
 
     <table id="test_table" border-color="blue" class="data-table">

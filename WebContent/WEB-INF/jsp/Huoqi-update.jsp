@@ -50,7 +50,7 @@
 	name="id" value="${b2.id}" readonly='true'></td>
 </tr></p>
     <tr>
-        <td class="title">投资机构:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="title">投资机构:&nbsp;&nbsp;&nbsp;</td>
         <td class="edit"><input type="text" class="txt" name="product" value="${b2.product}" > </td>
     </tr> </p>
 <tr>

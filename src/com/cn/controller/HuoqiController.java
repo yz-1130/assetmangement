@@ -3,6 +3,8 @@ package com.cn.controller;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+
+import com.cn.domain.Dingqi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,6 +27,13 @@ import com.cn.service.HuoqiDao;
 			Huoqi.setUserid(user.getId());
 		}
 		List<Huoqi> qlist=HuoqiDao.selectHuoqi(Huoqi);
+		int sum = 0;
+		for (Huoqi huoqi1 : qlist) {
+			int jine = huoqi1.getJine();
+			sum += jine;
+		}
+		Integer totalAssetsAmount = sum;
+		model.addAttribute("totalAssetsAmount", totalAssetsAmount);
 		model.addAttribute("result", qlist);
 		return "Huoqi-management";
 }
