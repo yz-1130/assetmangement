@@ -1,6 +1,17 @@
 package com.cn.domain;
 
 public class AssetsTotal {
+
+    private Integer id;
+    private Integer userid;
+    private String bankMoney;
+    private String jijinMoney;
+    private String jingyinMoney;
+    private String daiMoney;
+    private String licaiMoney;
+    private String baoMoney;
+    private String otherMoney;
+    private String houseMoney;
     public Integer getId() {
         return id;
     }
@@ -81,15 +92,6 @@ public class AssetsTotal {
         this.houseMoney = houseMoney;
     }
 
-    private Integer id;
-    private Integer userid;
-    private String bankMoney;
-    private String jijinMoney;
-    private String jingyinMoney;
-    private String daiMoney;
-    private String licaiMoney;
-    private String baoMoney;
-    private String otherMoney;
-    private String houseMoney;
+
 
 }

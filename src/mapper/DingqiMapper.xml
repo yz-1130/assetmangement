@@ -38,13 +38,13 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             and    status=#{status}
 		</if>
 			<if test="interest!='' and interest!=null">
-				interest=#{interest}
+				and 	interest=#{interest}
 			</if>
 			<if test="totalMoney!='' and totalMoney!=null">
-				totalMoney=#{totalMoney}
+				and 	totalMoney=#{totalMoney}
 			</if>
 			<if test="product!='' and product!=null">
-				product=#{product}
+				and 	product=#{product}
 			</if>
 		</where>
 	</select>

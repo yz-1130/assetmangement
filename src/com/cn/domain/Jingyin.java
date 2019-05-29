@@ -2,8 +2,25 @@ package com.cn.domain;
 public class  Jingyin{
   private Integer id;
   private String leixing;
-  private int jine;
-  private String shijian;
+
+    public Integer getJine() {
+        return jine;
+    }
+
+    public void setJine(Integer jine) {
+        this.jine = jine;
+    }
+
+    public Integer getShijian() {
+        return shijian;
+    }
+
+    public void setShijian(Integer shijian) {
+        this.shijian = shijian;
+    }
+
+    private Integer jine;
+  private Integer shijian;
   private String shichang;
   private String shuhui;
   private String recordDate;
@@ -21,18 +38,7 @@ public class  Jingyin{
   public void setLeixing(String leixing){
       this.leixing=leixing;
 	 }
-  public int getJine(){
-      return jine;
-   }
-  public void setJine(int jine){
-      this.jine=jine;
-	 }
-  public  String  getShijian(){
-      return shijian;
-   }
-  public void setShijian(String shijian){
-      this.shijian=shijian;
-	 }
+
   public  String  getShichang(){
       return shichang;
    }

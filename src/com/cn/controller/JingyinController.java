@@ -30,7 +30,7 @@ import com.cn.service.JingyinDao;
 		int sum = 0;
 		for (Jingyin jingyin1 : qlist) {
 			int jine;
-			jine = jingyin1.getJine();
+			jine = jingyin1.getShijian();
 			sum += jine;
 		}
 		int totalAssetsAmount = sum;

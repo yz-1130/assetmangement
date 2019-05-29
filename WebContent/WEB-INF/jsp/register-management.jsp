@@ -45,7 +45,7 @@
         <tr class="head">
         	<td>ID</td>
             <td>用户名</td>
-            <td>职位</td>
+            <td>角色</td>
             <td>申请日期</td>
             <td>操作</td>
            

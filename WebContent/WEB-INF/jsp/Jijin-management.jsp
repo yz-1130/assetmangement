@@ -15,7 +15,7 @@
     <script type="text/javascript">
         function add() {
             debugger
-            window.location.href="/Dingqi-insert.do";
+            window.location.href="/Jijin-insert.do";
 
         }
     </script>

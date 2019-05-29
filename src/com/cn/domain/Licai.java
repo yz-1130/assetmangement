@@ -2,7 +2,16 @@ package com.cn.domain;
 public class  Licai{
   private Integer id;
   private String leixing;
-  private int jine;
+
+    public Integer getJine() {
+        return jine;
+    }
+
+    public void setJine(Integer jine) {
+        this.jine = jine;
+    }
+
+    private Integer jine;
   private String shijian;
   private String shichang;
   private String shuhui;
@@ -23,12 +32,7 @@ public class  Licai{
   public void setLeixing(String leixing){
       this.leixing=leixing;
 	 }
-  public int getJine(){
-      return jine;
-   }
-  public void setJine(int jine){
-      this.jine=jine;
-	 }
+
   public  String  getShijian(){
       return shijian;
    }
