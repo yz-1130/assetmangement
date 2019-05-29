@@ -76,6 +76,10 @@
 	<td class="title">还款日期:</td>
  	<td class="edit"><input type="text" class="txt" name="shichang" value="${b2.shichang}" id="datetimepicker2"autocomplete="off"> </td>
 </tr> </p>
+    <tr>
+        <td class="title">借贷金额:</td>
+        <td class="edit"><input type="text" class="txt" name="money" value="${b2.money}" autocomplete="off"> </td>
+    </tr> </p>
 <tr>
 	<td class="title">备注:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</td>
  	<td class="edit"><input type="text" class="txt" name="shuhui" value="${b2.shuhui}" > </td>

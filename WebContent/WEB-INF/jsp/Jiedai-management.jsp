@@ -15,7 +15,7 @@
     <script type="text/javascript">
         function add() {
             debugger
-            window.location.href="/Dingqi-insert.do";
+            window.location.href="/Jiedai-insert.do";
 
         }
     </script>
@@ -49,7 +49,8 @@
 				<td>被借贷人</td>
 				<td>借贷日期</td>
 				<td>还款日期</td>
-				<td>借贷金额及备注</td>
+                <td>金额</td>
+				<td>备注</td>
                 <td>操作</td>
 
   </tr>
@@ -62,6 +63,7 @@
 				<td>${b2.jine}</td>
 				<td>${b2.shijian}</td>
 				<td>${b2.shichang}</td>
+                <td>${b2.money}</td>
 				<td>${b2.shuhui}</td>
 
 <td>

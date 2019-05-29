@@ -29,7 +29,7 @@ import com.cn.service.JiedaiDao;
 		int sum = 0;
 		for (Jiedai jiedai1 : qlist) {
 			int jine;
-			jine = jiedai1.getJine();
+			jine = jiedai1.getMoney();
 			sum += jine;
 		}
 		int totalAssetsAmount = sum;

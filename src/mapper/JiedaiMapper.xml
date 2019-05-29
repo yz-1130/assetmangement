@@ -34,12 +34,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<if test="status!='' and status!=null">
             and    status=#{status}
 		</if>
+		<if test="money!='' and money!=null">
+			and    money=#{money}
+		</if>
 		</where>
 	</select>
 
 <!-- add new record -->
  	<insert id="insertJiedai" parameterType="com.cn.domain.Jiedai">
-  		insert into Jiedai (leixing,jine,shijian,shichang,shuhui,recordDate,userid,status) values ("${leixing}","${jine}","${shijian}","${shichang}","${shuhui}","${recordDate}","${userid}","${status}")
+  		insert into Jiedai (leixing,jine,shijian,shichang,shuhui,recordDate,userid,status,money) values ("${leixing}","${jine}","${shijian}","${shichang}","${shuhui}","${recordDate}","${userid}","${status}","${money}")
  	</insert>
 
 <!-- update -->
@@ -55,6 +58,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			<if test="recordDate!='' and recordDate!= null">recordDate=#{recordDate},</if>
 			<if test="userid!='' and userid!= null">userid=#{userid},</if>
 			<if test="status!='' and status!= null">status=#{status},</if>
+			<if test="money!='' and money!= null">money=#{money},</if>
+
 
 		</trim>
 		where id=#{id} 

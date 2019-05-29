@@ -2,13 +2,24 @@ package com.cn.domain;
 public class  Jiedai{
   private Integer id;
   private String leixing;
-  private int jine;
+  private String  jine;
   private String shijian;
   private String shichang;
   private String shuhui;
   private String recordDate;
   private Integer userid;
   private String status;
+
+    public Integer getMoney() {
+        return money;
+    }
+
+    public void setMoney(Integer money) {
+        this.money = money;
+    }
+
+    private Integer money;
+
   public  Integer  getId(){
       return id;
    }
@@ -21,10 +32,10 @@ public class  Jiedai{
   public void setLeixing(String leixing){
       this.leixing=leixing;
 	 }
-  public int getJine(){
+  public String getJine(){
       return jine;
    }
-  public void setJine(int jine){
+  public void setJine(String jine){
       this.jine=jine;
 	 }
   public  String  getShijian(){
