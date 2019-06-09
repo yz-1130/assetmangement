@@ -28,14 +28,20 @@
     <%--<img src="${pageContext.request.contextPath}/images/house.png">--%>
 <%--</div>--%>
 <form action="selectAssetsTotal.do" method="post">
+<%--
 <div class="whole">
     <div class="littletitle">搜索查询</div>
-编号:<input type="text" placeholder="按编号查询" name="id" class="text">&nbsp;&nbsp;
-保险类型:<input type="text" placeholder="按类型查询" name="leixing" class="text">&nbsp;&nbsp;
+&lt;%&ndash;
+//编号:<input type="text" placeholder="按编号查询" name="id" class="text">&nbsp;&nbsp;
+&ndash;%&gt;
+&lt;%&ndash;
+//保险类型:<input type="text" placeholder="按类型查询" name="leixing" class="text">&nbsp;&nbsp;
+&ndash;%&gt;
   <img src="${pageContext.request.contextPath}/images/query.jpg" class="img1">&nbsp;<input type="submit" value="查询" class="button">&nbsp;&nbsp;
 	<input type="button" value="新增" onclick="add()" class="button">&nbsp;&nbsp;
 <img src="${pageContext.request.contextPath}/images/reset.png" class="img3">&nbsp;<input type="reset" value="重置" class="button">   
 </div>
+--%>
 
 <div class="main">
 	<div class="excle">
